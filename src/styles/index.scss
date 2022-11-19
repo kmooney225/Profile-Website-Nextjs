@@ -1,0 +1,33 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page {
+    position: relative;
+    height: 300vh;
+}
+
+.content {
+    background: transparent;
+    // transform: scale(1.2);
+    width: 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+@import './header';
+@import './contact';

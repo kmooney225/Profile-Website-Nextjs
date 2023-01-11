@@ -41,20 +41,20 @@ const Navbar = () => {
                     <h1 
                     style={{color: `${textColor}`}}
                     className='font-bold text-4xl'>
-                        Aidez-moi
+                        Kevin Mooney
                     </h1>
                 </Link>
                 <ul 
                 style={{color: `${textColor}`}}
                 className='hidden sm:flex'>
                     <li className='p-4'>
-                        <Link href='/'>Services</Link>
+                        <Link href='/'>Music</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='/#gallery'>About Me</Link>
+                        <Link href='/#gallery'>Web Dev</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='/work'>Blog</Link>
+                        <Link href='/work'>About Me</Link>
                     </li>
                     <li className='p-4'>
                         <Link href='/contact'>Contact</Link>

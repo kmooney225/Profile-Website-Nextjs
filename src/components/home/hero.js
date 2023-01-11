@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () =>{
 
-    const [opacity, setOpacity] = useState(0.8)
+    const [opacity, setOpacity] = useState(0.65)
     const [blur, setBlur] = useState('blur(0px)')
     //botantical illustrations
     //mail chimp
@@ -13,7 +13,7 @@ const Hero = () =>{
                 setOpacity(1)
             } else {
                 setBlur('blur(' + window.scrollY/20 + 'px)')
-                setOpacity( 0.80 + window.scrollY/3000)
+                setOpacity( 0.65 + window.scrollY/3000)
             }
         }
         window.addEventListener('scroll', changeBlur);
@@ -33,8 +33,8 @@ const Hero = () =>{
             }}
             className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'></div>
             <div className='center p-5 text-white z-[2]'>
-                <h1 className='text-5xl font-bold'>Aidez-moi Design & Consulting</h1>
-                <h2 className='text-2xl p-8'>A helping hand for life's unforgettable events</h2>
+                <h1 className='text-5xl font-bold'>Kevin Mooney</h1>
+                {/* <h2 className='text-2xl p-8'>Developing beautiful websites and creating beautiful music</h2> */}
             </div>
         </div>
     )

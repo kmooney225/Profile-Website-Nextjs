@@ -8,7 +8,7 @@ const Header = () => {
     return(
         <div>
             <Head>
-                <title>Aidez-moi</title>
+                <title>Kevin Mooney</title>
                 <link href='favicon.ico' />
             </Head>
             <Navbar />

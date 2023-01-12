@@ -54,17 +54,17 @@ const Navbar = () => {
                 </Link>
                 <ul 
                 style={{color: `${textColor}`}}
-                className='hidden sm:flex'>
-                    <li className='p-4 hover:bg-gray-400 hover:text-gray-500 rounded-md hover:rounded-xl transition-all duration-300 ease-linear'>
+                className='hidden sm:flex '>
+                    <li className={router.pathname === '/' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link href='/'>Bio</Link>
                     </li>
-                    <li className={router.pathname === '/webdev' ? 'p-4 hover:text-gray-500 transition-all duration-300 ease-linear' : 'p-4 hover:bg-gray-400 hover:text-gray-500 rounded-md hover:rounded-xl transition-all duration-300 ease-linear'}>
+                    <li className={router.pathname === '/webdev' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link href='/webdev'>Web Dev</Link>
                     </li>
-                    <li className='p-4 hover:text-gray-500 transition-all duration-300 ease-linear'>
+                    <li className={router.pathname === '/music' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link href='/music'>Music</Link>
                     </li>
-                    <li className='p-4 hover:text-gray-500 transition-all duration-300 ease-linear'>
+                    <li className={router.pathname === '/contact' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link href='/contact'>Contact</Link>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@ const Navbar = () => {
                     >
                     <ul>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/'>Nio</Link>
+                            <Link href='/'>Bio</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/webdev'>Web Dev</Link>

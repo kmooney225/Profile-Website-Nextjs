@@ -10,13 +10,19 @@ const Product = () =>{
                         and party venues</p>
                 </div>
                 <div className='z-[2] w-1/2 h-1/2 p-8 items-center justify-center'>
-                    <h2 className='text-5xl font-bold text-white'>Music pic</h2>
+                <img 
+                        src={"./music.jpg"} 
+                        alt="ProfilePic" 
+                        className='flex justify-center items-center w-full rounded-lg'/>
                 </div>
             </div>
 
             <div className='flex flex-row'>
                 <div className='z-[2] w-1/2 h-full p-8 items-center justify-center text-white'>
-                    <h2 className='text-5xl font-bold'>Web Dev pic</h2>
+                <img 
+                        src={"./webdev.jpg"} 
+                        alt="ProfilePic" 
+                        className='flex justify-center items-center w-full rounded-lg'/>
                 </div>
                 <div className='z-[2] w-1/2 h-full p-8 bg-red-600 items-center justify-center text-white'>
                     <h2 className='text-5xl font-bold'>Web Dev</h2>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import {useRouter} from 'next/router';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -8,10 +9,16 @@ const Navbar = () => {
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
     const [boxShadow, setBoxShadow] = useState('0px')
+    const router = useRouter();
 
     const handleNav = () => {
         setNav(!nav)
     }
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        router.push(href)
+      }
 
     useEffect(()=>{
         const changeColor = () => {
@@ -25,6 +32,7 @@ const Navbar = () => {
                 setBoxShadow('0px 0px 0px')
             }
         }
+        console.log(router.pathname)
         window.addEventListener('scroll', changeColor);
     }, []);
 
@@ -47,16 +55,16 @@ const Navbar = () => {
                 <ul 
                 style={{color: `${textColor}`}}
                 className='hidden sm:flex'>
-                    <li className='p-4'>
-                        <Link href='/'>Music</Link>
+                    <li className='p-4 hover:bg-gray-400 hover:text-gray-500 rounded-md hover:rounded-xl transition-all duration-300 ease-linear'>
+                        <Link href='/'>Bio</Link>
                     </li>
-                    <li className='p-4'>
-                        <Link href='/#gallery'>Web Dev</Link>
+                    <li className={router.pathname === '/webdev' ? 'p-4 hover:text-gray-500 transition-all duration-300 ease-linear' : 'p-4 hover:bg-gray-400 hover:text-gray-500 rounded-md hover:rounded-xl transition-all duration-300 ease-linear'}>
+                        <Link href='/webdev'>Web Dev</Link>
                     </li>
-                    <li className='p-4'>
-                        <Link href='/work'>About Me</Link>
+                    <li className='p-4 hover:text-gray-500 transition-all duration-300 ease-linear'>
+                        <Link href='/music'>Music</Link>
                     </li>
-                    <li className='p-4'>
+                    <li className='p-4 hover:text-gray-500 transition-all duration-300 ease-linear'>
                         <Link href='/contact'>Contact</Link>
                     </li>
                 </ul>
@@ -74,13 +82,13 @@ const Navbar = () => {
                     >
                     <ul>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/'>Home</Link>
+                            <Link href='/'>Nio</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#gallery'>Gallery</Link>
+                            <Link href='/webdev'>Web Dev</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/work'>Work</Link>
+                            <Link href='/music'>Music</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/contact'>Contact</Link>

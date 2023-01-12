@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link href='/'>
                     <h1 
                     style={{color: `${textColor}`}}
-                    className='font-bold text-4xl'>
+                    className='font-sacramento text-5xl'>
                         Kevin Mooney
                     </h1>
                 </Link>

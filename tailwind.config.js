@@ -4,6 +4,9 @@ module.exports = {
 		'./pages/**/*.js'],
 	theme: {
 		extend: {
+			fontFamily: {
+				sacramento: ['Sacramento'],
+			  },
 			colors: {
 				current: 'currentColor',
 				'yellow-green': '#ECF87F',

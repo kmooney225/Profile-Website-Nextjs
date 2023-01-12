@@ -15,7 +15,7 @@ const Service = () =>{
                 setOpacity(1)
             } else {
                 setBlur('blur(' + window.scrollY/20 + 'px)')
-                setOpacity( 0.65 + window.scrollY/3000)
+                setOpacity( 0.60 + window.scrollY/3000)
             }
         }
         window.addEventListener('scroll', changeBlur);
@@ -41,9 +41,9 @@ const Service = () =>{
                         <img 
                         src={"./KevinFuji.jpg"} 
                         alt="ProfilePic" 
-                        className='flex justify-center items-center w-1/2 rounded-lg'/>
+                        className='flex justify-center items-center w-full md:w-1/2 rounded-lg'/>
                     </div>
-                    <p className='flex justify-center text-xl'>I am guy a get with a sense for art. After 15 years of playing music as an multi-instrumentalist for
+                    <p className='flex justify-center text-lg'>I am a guy with a sense for art. After 15 years of playing music as an multi-instrumentalist for
                     different occasions and a strong career in tech, I have a dream to create beautiful services, tech and music alike. Welcome to 
                     my website, and if you need to contact me, remember to go to contact page to send a message or book a time to talk!
                     </p>

@@ -13,7 +13,7 @@ import { faInstagram,
 const Contact = () =>{
     return(
         <section className="relative flex w-full min-h-screen justify-center items-center p-2 bg-black z-[2]">
-            <div className="flex flex-col md:flex-row md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
+            <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
                 <div className='flex flex-col space-y-8 justify-between'>
                     <div>
                         <h1 className='font-bold text-4xl tracking-wide'>

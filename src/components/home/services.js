@@ -36,7 +36,7 @@ const Service = () =>{
                 className='absolute flex flex-col justify-center top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
             </div>
             <div className='z-[2] w-2/3 h-full p-8 rounded-md bg-red-600 text-white'>
-                    <h2 className='flex text-5xl font-bold justify-center'>My Bio</h2>
+                    <h2 className='flex text-5xl font-sacramento font-bold justify-center'>My Bio</h2>
                     <div className='flex justify-center p-8'>
                         <img 
                         src={"./KevinFuji.jpg"} 

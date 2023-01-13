@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Header = () =>{
+const Package = () =>{
 
     return(
         <div className='flex items-center justify-center h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
         <div className='center p-5 text-white z-[2]'>
             <h1 className='text-7xl  font-sacramento after:bg-white after:rounded-lg'>
-                Web Development
+                Package for Web Development
             </h1>
         </div>
     </div>
     )
 }
 
-export default Header;
+export default Package;

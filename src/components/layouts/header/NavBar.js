@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
+    const [path, setPath] = useState(false)
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
     const [boxShadow, setBoxShadow] = useState('0px')
@@ -17,31 +18,38 @@ const Navbar = () => {
 
     const handleClick = (e) => {
         e.preventDefault()
-        router.push(href)
       }
 
     useEffect(()=>{
         const changeColor = () => {
-            if(window.scrollY >= 600){
+
+            if(router.pathname !=='/'){
                 setColor('#ffffff')
-                setTextColor('#000000')
-                setBoxShadow('1px 2px 9px')
-            } else {
-                setColor('transparent')
-                setTextColor('#f2f2f2')
-                setBoxShadow('0px 0px 0px')
+                    setTextColor('#000000')
+                    setBoxShadow('1px 2px 9px')
+            }
+            else {
+                if(window.scrollY >= 600){
+                    setColor('#ffffff')
+                    setTextColor('#000000')
+                    setBoxShadow('1px 2px 9px')
+                } else {
+                    setColor('transparent')
+                    setTextColor('#f2f2f2')
+                    setBoxShadow('0px 0px 0px')
+                }
             }
         }
-        console.log(router.pathname)
+        
         window.addEventListener('scroll', changeColor);
-    }, []);
+    }, [router.pathname]);
 
 
     return (
         <div 
-        style={
-            {backgroundColor: `${color}`,
-             boxShadow: `${boxShadow}`}}
+        style={{
+            backgroundColor: `${color}`,
+            boxShadow: `${boxShadow}`}}
         className="fixed left-0 w-full z-10 ease-in duration-300"
         >
             <div className="max-w-[1240] m-auto flex justify-between items-center p-4 text-white">

@@ -3,11 +3,56 @@ import React from 'react';
 const Description = () =>{
 
     return(
-        <div className='flex items-center justify-center h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
-        <div className='center p-5 text-white z-[2]'>
-            <h1 className='text-7xl  font-sacramento after:bg-white after:rounded-lg'>
+    <div className='h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
+        <div className='text-white z-[2]'>
+            <h1 className='flex items-center justify-center text-7xl font-sacramento'>
                 Decription for Music
             </h1>
+        </div>
+        
+        <div className='relative p-2 rounded-md bg-red-600 text-white w-[30%]'>
+                <h2 className='text-6xl font-sacramento'>
+                    Enjoy
+                </h2>
+                <p className='text-md m-4'>
+                    The 
+                </p>
+        </div>
+
+        <div className='relative items-center justify-center p-2 rounded-md bg-red-600 text-white w-[30%]'>
+                <h2 className='text-6xl font-sacramento'>
+                    Image 1
+                </h2>
+                <p className='text-md m-4'>
+                    The 
+                </p>
+        </div>
+
+        <div className='relative p-2 right-[-70%] rounded-md bg-red-600 text-white md:w-[30%]'>
+                <h2 className='text-6xl font-sacramento'>
+                    Create
+                </h2>
+                <p className='text-md m-4'>
+                    The perfect party that anyone can enjoy 
+                </p>
+        </div>
+
+        <div className='relative items-center justify-center p-2 rounded-md bg-red-600 text-white w-[30%]'>
+                <h2 className='text-6xl font-sacramento'>
+                    Image 2
+                </h2>
+                <p className='text-md m-4'>
+                    The 
+                </p>
+        </div>
+
+        <div className='relative p-2 right-[-70%] rounded-md bg-red-600 text-white md:w-[30%]'>
+                <h2 className='text-6xl font-sacramento'>
+                    Create
+                </h2>
+                <p className='text-md m-4'>
+                    The perfect party that anyone can enjoy 
+                </p>
         </div>
     </div>
     )

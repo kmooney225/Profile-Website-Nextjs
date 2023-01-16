@@ -16,9 +16,9 @@ const Contact = () =>{
             <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
                 <div className='flex flex-col space-y-8 justify-between'>
                     <div>
-                        <h1 className='font-bold text-4xl tracking-wide'>
+                        <h2 className='font-bold text-4xl tracking-wide'>
                             Contact Me
-                        </h1>
+                        </h2>
                         <p className='pt-2 text-gray-300 text-sm'>
                             Let me know if you have any questions or concerns!
                         </p>

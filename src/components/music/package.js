@@ -4,10 +4,10 @@ const Package = () =>{
 
     return(
         <div className='flex flex-col items-center justify-center h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
-        <div className='center p-5 text-white z-[2]'>
-            <h1 className='text-7xl  font-sacramento after:bg-white after:rounded-lg'>
-                Package for Music
-            </h1>
+            <div className='center p-5 text-white z-[2]'>
+                <h1 className='text-7xl font-sacramento after:bg-white after:rounded-lg'>
+                    Package for Music
+                </h1>
             </div>
 
             <div className='p-6 flex flex-row items-center justify-center'>
@@ -39,7 +39,8 @@ const Package = () =>{
                         Private, Customized, Or Big Events
                     </h2>
                     <p className='text-md m-4'>
-                        The 
+                        Since bigger venues call for a different set up and arrangement of my time, I will customize
+                        what I do for the occasion.
                     </p>
                     <p className='text-md m-4'>
                         Price: Varies

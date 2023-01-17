@@ -3,56 +3,54 @@ import React from 'react';
 const Description = () =>{
 
     return(
-    <div className='h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
-        <div className='text-white z-[2]'>
-            <h1 className='flex items-center justify-center text-7xl font-sacramento'>
-                Decription for Music
-            </h1>
-        </div>
-
-        <div className='p-6 flex flex-col'>
+    <div className='h-auto items-center justify-center bg-black z-[2] object-cover'>
+        <div className='p-12 flex flex-col'>
             <div className='p-4 rounded-md bg-red-600 text-white w-[30%]'>
                     <h2 className='text-6xl font-sacramento'>
-                        Enjoy
+                        Cherish
                     </h2>
                     <p className='text-md m-4'>
-                        The 
+                        The big moments that life have to give with the song of your dreams.
                     </p>
             </div>
 
             <div className='p-2 self-center rounded-md bg-red-600 text-white w-[30%]'>
-                    <h2 className='text-6xl font-sacramento'>
-                        Image 1
-                    </h2>
-                    <p className='text-md m-4'>
-                        The 
-                    </p>
+            <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-full'>
+                    <img 
+                        src={"./music1.jpg"} 
+                        alt="Music1" 
+                        className='flex justify-center items-center w-full rounded-md'
+                    />
+                </div>
             </div>
 
             <div className='self-end p-2 rounded-md bg-red-600 text-white md:w-[30%]'>
                     <h2 className='text-6xl font-sacramento'>
-                        Create
+                        Build
                     </h2>
                     <p className='text-md m-4'>
-                        The perfect party that anyone can enjoy 
+                        Upon perfect party with your favorite music selections. From Pop to Jazz,
+                        add any variation to curtail the perfect night.
                     </p>
             </div>
 
             <div className='self-center p-2 rounded-md bg-red-600 text-white w-[30%]'>
-                    <h2 className='text-6xl font-sacramento'>
-                        Image 2
-                    </h2>
-                    <p className='text-md m-4'>
-                        The 
-                    </p>
+            <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-full'>
+                    <img 
+                        src={"./music2.jpg"} 
+                        alt="ProfilePic" 
+                        className='flex justify-center items-center w-full rounded-md'
+                    />
+                </div>
             </div>
 
             <div className='p-2 rounded-md bg-red-600 text-white md:w-[30%]'>
                     <h2 className='text-6xl font-sacramento'>
-                        Create
+                        Imagine
                     </h2>
                     <p className='text-md m-4'>
-                        The perfect party that anyone can enjoy 
+                        With the perfect background music, any precious moment will be sweeter, whether it is a small party to celebrate
+                        with your friends, or the best wedding anyone has ever planned.
                     </p>
             </div>
         </div>

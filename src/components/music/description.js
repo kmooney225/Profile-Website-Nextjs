@@ -3,9 +3,9 @@ import React from 'react';
 const Description = () =>{
 
     return(
-    <div className='h-auto items-center justify-center bg-black z-[2] object-cover'>
+    <div className='h-auto items-center justify-center bg-black bg-fixed z-[2] object-cover'>
         <div className='p-12 flex flex-col'>
-            <div className='p-4 rounded-md bg-red-600 text-white w-[30%]'>
+            <div className='p-4 rounded-md bg-red-600 text-white w-full md:w-[30%]'>
                     <h2 className='text-6xl font-sacramento'>
                         Cherish
                     </h2>
@@ -14,8 +14,8 @@ const Description = () =>{
                     </p>
             </div>
 
-            <div className='p-2 self-center rounded-md bg-red-600 text-white w-[30%]'>
-            <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-full'>
+            <div className='p-2 self-center rounded-md bg-red-600 text-white md:w-[50%]'>
+                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center w-full'>
                     <img 
                         src={"./music1.jpg"} 
                         alt="Music1" 
@@ -34,7 +34,7 @@ const Description = () =>{
                     </p>
             </div>
 
-            <div className='self-center p-2 rounded-md bg-red-600 text-white w-[30%]'>
+            <div className='self-center p-2 rounded-md bg-red-600 text-white md:w-[40%]'>
             <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-full'>
                     <img 
                         src={"./music2.jpg"} 

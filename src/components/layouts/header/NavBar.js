@@ -16,8 +16,10 @@ const Navbar = () => {
         setNav(!nav)
     }
 
-    const handleClick = (e) => {
-        e.preventDefault()
+    const handlePath = (e) => {
+        setColor('#ffffff')
+        setTextColor('#000000')
+        setBoxShadow('1px 2px 9px')
       }
 
     useEffect(()=>{
@@ -93,13 +95,13 @@ const Navbar = () => {
                             <Link href='/'>Bio</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/webdev'>Web Dev</Link>
+                            <Link onClick={handlePath} href='/webdev'>Web Dev</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/music'>Music</Link>
+                            <Link onClick={handlePath} href='/music'>Music</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/contact'>Contact</Link>
+                            <Link onClick={handlePath} href='/contact'>Contact</Link>
                         </li>
                     </ul>
                 </div>

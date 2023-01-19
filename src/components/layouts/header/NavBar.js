@@ -17,10 +17,10 @@ const Navbar = () => {
     }
 
     const handlePath = (e) => {
-        if (router.pathname == ''){
-        setColor('transparent')
-        setTextColor('#f2f2f2')
-        setBoxShadow('0px 0px 0px')
+        if (router.pathname !== '/'){
+            setColor('#ffffff')
+            setTextColor('#000000')
+            setBoxShadow('1px 2px 9px')
     }
         else {
             if(window.scrollY >= 600){

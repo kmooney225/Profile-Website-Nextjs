@@ -17,9 +17,22 @@ const Navbar = () => {
     }
 
     const handlePath = (e) => {
-        setColor('#ffffff')
-        setTextColor('#000000')
-        setBoxShadow('1px 2px 9px')
+        if (router.pathname == ''){
+        setColor('transparent')
+        setTextColor('#f2f2f2')
+        setBoxShadow('0px 0px 0px')
+    }
+        else {
+            if(window.scrollY >= 600){
+                setColor('#ffffff')
+                setTextColor('#000000')
+                setBoxShadow('1px 2px 9px')
+            } else {
+                setColor('transparent')
+                setTextColor('#f2f2f2')
+                setBoxShadow('0px 0px 0px')
+            }
+        }
       }
 
     useEffect(()=>{
@@ -66,16 +79,16 @@ const Navbar = () => {
                 style={{color: `${textColor}`}}
                 className='hidden sm:flex '>
                     <li className={router.pathname === '/' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
-                        <Link href='/'>Bio</Link>
+                        <Link onClick={handlePath}  href='/'>Bio</Link>
                     </li>
                     <li className={router.pathname === '/webdev' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
-                        <Link href='/webdev'>Web Dev</Link>
+                        <Link onClick={handlePath}  href='/webdev'>Web Dev</Link>
                     </li>
                     <li className={router.pathname === '/music' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
-                        <Link href='/music'>Music</Link>
+                        <Link onClick={handlePath}  href='/music'>Music</Link>
                     </li>
                     <li className={router.pathname === '/contact' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
-                        <Link href='/contact'>Contact</Link>
+                        <Link onClick={handlePath}  href='/contact'>Contact</Link>
                     </li>
                 </ul>
                 <div onClick={handleNav} className='block sm:hidden z-10'>
@@ -92,16 +105,16 @@ const Navbar = () => {
                     >
                     <ul>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/'>Bio</Link>
+                            <Link onClick={handleNav} href='/'>Bio</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link onClick={handlePath} href='/webdev'>Web Dev</Link>
+                            <Link onClick={handleNav} href='/webdev'>Web Dev</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link onClick={handlePath} href='/music'>Music</Link>
+                            <Link onClick={handleNav} href='/music'>Music</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link onClick={handlePath} href='/contact'>Contact</Link>
+                            <Link onClick={handleNav} href='/contact'>Contact</Link>
                         </li>
                     </ul>
                 </div>

@@ -4,8 +4,8 @@ const Portfolio = () =>{
 
     return(
         <div className='p-8 flex items-center justify-center h-auto bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
-        <div className='center p-5 border-2 text-white z-[2]'>
-            <h1 className='text-7xl m-12 font-sacramento after:bg-white after:rounded-lg'>
+        <div className='center mt-32 p-5 border-2 text-white z-[2]'>
+            <h1 className='flex text-7xl m-12 items-center justify-center font-sacramento after:bg-white after:rounded-lg'>
                 Music Demo
             </h1>
             <div className='flex flex-col md:flex-row p-4'>

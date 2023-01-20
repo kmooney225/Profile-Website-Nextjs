@@ -11,7 +11,7 @@ const Header = () =>{
             </div>
             <div className='center p-5 text-white z-[2]'>
                 <h2 className='text-3xl'>
-                    For young professionals step in the door.
+                    For young professionals who needs a digital show case.
                 </h2>
             </div>
         </div>

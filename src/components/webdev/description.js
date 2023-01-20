@@ -3,62 +3,65 @@ import React from 'react';
 const Description = () =>{
 
     return(
-        <div className='h-auto items-center justify-center bg-black bg-fixed z-[2] object-cover'>
-            <div className='p-12 flex flex-col'>
-                <div className='self-end p-4 rounded-md bg-red-600 text-white w-full md:w-[30%]'>
+        <div className='h-auto bg-black bg-fixed z-[2] object-cover'>
+            <div className='p-12 flex flex-col items-center justify-center'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                    
+                    <h2 className='text-6xl font-sacramento'>
+                        Curious?
+                    </h2>
+                    <img 
+                        src={"./glance.jpg"} 
+                        alt="Glance" 
+                        className='bg-gray-300 rounded-md p-2 items-center justify-center w-full'
+                    />
+                    <p className='text-md m-4'>
+                        Are you looking to create a new business or land that next exciting job?
+                        Maybe you need to revise some old catalogs for your restaurant, or rejuvinate
+                        your digital portfolio? I know the challenge of making your mark on this world,
+                        and I am here to give you assistance!
+                    </p>
+                </div>
+            </div>
+
+            <div className='p-12 flex flex-col items-center justify-center'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                    
+                    <h2 className='text-6xl font-sacramento'>
+                        Meet Me
+                    </h2>
+                    <img 
+                        src={"./handshake.jpg"} 
+                        alt="Handshake" 
+                        className='bg-gray-300 rounded-md p-2 items-center justify-center w-full'
+                    />
+                    <p className='text-md m-4'>
+                        I am  a developer who is here to support your dreams of creating that landing page that
+                        stands out, or a display of your talents.
+                    </p>
+                </div>
+            </div>
+
+            <div className='p-12 flex flex-col items-center justify-center'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                    
                     <h2 className='text-6xl font-sacramento'>
                         Represent
                     </h2>
+                    <img 
+                        src={"./handshake.jpg"} 
+                        alt="Handshake" 
+                        className='bg-gray-300 rounded-md p-2 items-center justify-center w-full'
+                    />
                     <p className='text-md m-4'>
                         Whether it is your chances of landing your dream job, or getting more customers,
                         The website that represents your business should give you the best chance to put your 
                         foot forward.
                     </p>
-            </div>
-
-            <div className='p-2 self-center rounded-md bg-red-600 text-white md:w-[50%]'>
-                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center w-full'>
-                    <img 
-                        src={"./music1.jpg"} 
-                        alt="Music1" 
-                        className='flex justify-center items-center w-full rounded-md'
-                    />
-                    <h1>market explanation</h1>
                 </div>
             </div>
 
-            <div className='p-2 h-auto rounded-md bg-red-600 text-white md:w-[30%]'>
-                    <h2 className='text-6xl font-sacramento'>
-                        Demonstrate
-                    </h2>
-                    <p className='text-md m-4'>
-                        Your services 
-                    </p>
-            </div>
-
-            <div className='self-center p-2 rounded-md bg-red-600 text-white md:w-[40%]'>
-            <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-full'>
-                    <img 
-                        src={"./music2.jpg"} 
-                        alt="ProfilePic" 
-                        className='flex justify-center items-center w-full rounded-md'
-                    />
-                    <h1>hand shake</h1>
-                </div>
-            </div>
-
-            <div className='self-end p-2 rounded-md bg-red-600 text-white md:w-[30%]'>
-            <h2 className='text-6xl font-sacramento'>
-                        Garentee
-                    </h2>
-                    <p className='text-md m-4'>
-                        Whether it is landing your dream job, or finalizing deals with more customers,
-                        The website that represents your business should give you the best chance to put your 
-                        foot forward.
-                    </p>
-            </div>
         </div>
-    </div>
     )
 }
 

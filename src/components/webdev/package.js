@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Package = () =>{
 
     return(
-        <div className='flex flex-col items-center justify-center h-screen bg-black z-[2] object-cover bg-fixed bg-center bg-cover'>
+        <div className='flex flex-col items-center justify-center h-auto bg-black z-[2] object-cover'>
             <div className='center p-5 text-white z-[2]'>
                 <h1 className='text-7xl  font-sacramento after:bg-white after:rounded-lg'>
                     Package for Website Production

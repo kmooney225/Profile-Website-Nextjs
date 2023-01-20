@@ -14,6 +14,3 @@ npm run dev
 # or
 yarn dev
 ```
-#� �s�i�n�a�i�-�w�e�b�s�i�t�e�
-�
-�

@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCode,
         faComputer
@@ -23,43 +22,53 @@ const Portfolio = () =>{
             </h1>
 
             <div className='flex flex-col md:flex-row items-center justify-center'>
-                <div className='h-56 md:h-96 relative p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
-                    <h2 className='text-3xl font-sacramento'>
+                <div className='h-[32em]  relative p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
+                    <h2 className='flex items-center justify-center mb-6 text-3xl font-sacramento'>
                         3D Tetromino
                     </h2>
+                    <img 
+                        src={"./3-d-tetromino.png"} 
+                        alt="Tetromino" 
+                        className='block mt-4 mr-auto ml-auto bg-gray-300 rounded-md p-2 w-[16em]'
+                    />
                     <p className='text-md m-4'>
                         A 3D game remodeled after the origin game of Tetris. Made with C# using the 
                         Unity framework.
                     </p>
                 
                     <div className='absolute bottom-2 left-2 h-10 md:h-10 rounded-md border-2 border-gray-200 text-white w-10'>
-                        <Link href='/contact'>
+                        <a href='https://simmer.io/@kmoney225/3d-tetromino'>
                             <FontAwesomeIcon className='flex items-center justify-content' icon={faComputer} />
-                        </Link>
+                        </a>
                     </div>
                     <div className='absolute bottom-2 right-2 h-10 md:h-10 rounded-md border-2 border-gray-200 text-white w-10'>
-                        <Link href='/contact'>
+                        <a href='https://github.com/kmooney225/Tetromino3D'>
                             <FontAwesomeIcon className='text-white' icon={faCode} />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             
-                <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
-                    <h2 className='text-3xl font-sacramento'>
+                <div className='h-[32em] relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
+                    <h2 className='flex items-center justify-center mb-6 text-3xl font-sacramento'>
                         Music Player
                     </h2>
+                    <img 
+                        src={"./music-player.png"} 
+                        alt="Handshake" 
+                        className='mr-auto ml-auto mt-4 bg-gray-300 rounded-md p-2 w-[20em]'
+                    />
                     <p className='text-md m-4'>
-                        A custom, modern music player developed in React.js.
+                        A custom, modern music player. Developed using React.js and Sass.
                     </p>
-                    <div className='absolute bottom-2 left-2 h-10 md:h-10 rounded-md border-2 border-gray-200 text-white w-10'>
-                        <Link href='/contact'>
+                    <div className='absolute bottom-2 left-2 h-10 rounded-md border-2 border-gray-200 text-white w-10'>
+                        <a href='https://cool-mandazi-092c82.netlify.app/'>
                             <FontAwesomeIcon className='flex items-center justify-content' icon={faComputer} />
-                        </Link>
+                        </a>
                     </div>
-                    <div className='absolute bottom-2 right-2 h-10 md:h-10 rounded-md border-2 border-gray-200 text-white w-10'>
-                        <Link href='/contact'>
+                    <div className='absolute bottom-2 right-2 h-10 rounded-md border-2 border-gray-200 text-white w-10'>
+                        <a href='https://github.com/kmooney225/Music-Player'>
                             <FontAwesomeIcon className='text-white' icon={faCode} />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

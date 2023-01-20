@@ -9,7 +9,7 @@ const Product = () =>{
                     <h2 className='p-4 text-6xl font-sacramento'>
                         Music
                     </h2>
-                    <p className='text-md m-4'>
+                    <p className='text-lg m-4'>
                         I offer services with music for different venues type. This include Weddings, resturants,
                         and party venues.
                     </p>
@@ -40,7 +40,7 @@ const Product = () =>{
                     <h2 className='p-4 text-6xl font-sacramento'>
                         Web Dev
                     </h2>
-                    <p className='text-md m-4'>I create websites for different things, from professionals needing a digital portfolio 
+                    <p className='text-lg m-4'>I create websites for different things, from professionals needing a digital portfolio 
                     to small business needing a brouchure website of their product!
                     </p>
                     <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">

@@ -14,34 +14,35 @@ const Package = () =>{
         <div className='flex flex-col md:flex-row items-center justify-center'>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
                 <h2 className='text-3xl font-sacramento'>
-                    Weddings and Ceremonies
+                    1 Page
                 </h2>
                 <p className='text-md m-4'>
-                    I will come with a playlist of wedding approiate songs as default. If there are any special request before
-                    the wedding, I can learn them and add them to my set.
+                    Being an colorful landing page or a brohsure site for your services, I can 
+                    make your website attractive right when an user click on the link.
                 </p>
                 <p className='absolute bottom-0 text-md'>
-                    Price: $350/hr
+                    Price: Contact Me
                 </p>
             </div>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
                 <h2 className='text-3xl font-sacramento'>
-                    Public Events
+                    3 Pages
                 </h2>
                 <p className='text-md m-4'>
-                    I will have a set of songs for different venues, from restaurants to coffee shops
+                    With the need of displaying your services, you may want a page dedidcated to explaning your services, for your bio,
+                    and for people to contact you.
                 </p>
                 <p className='absolute bottom-0 text-md'>
-                    Price: $175/hr
+                    Price: Contact Me
                 </p>
             </div>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
                 <h2 className='text-3xl font-sacramento'>
-                    Private, Customized, Or Big Events
+                    Multi-Page 
                 </h2>
                 <p className='text-md m-4'>
-                    Since bigger venues call for a different set up and arrangement of my time, I will customize
-                    what I do for the occasion.
+                    You may need a number of pages for the website that you need created as you may have
+                    many talents and/or services to grab your audiences' attention.
                 </p>
                 <p className='absolute bottom-0 text-md'>
                     Price: Varies

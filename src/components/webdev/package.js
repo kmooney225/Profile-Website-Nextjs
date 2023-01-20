@@ -18,8 +18,8 @@ const Package = () =>{
                     1 Page
                 </h2>
                 <p className='text-md m-4'>
-                    Being an colorful landing page or a brohsure site for your services, I can 
-                    make your website attractive right when an user click on the link.
+                    Being an colorful landing page or a brochure site for your services, an attractive 
+                    1 page website can be made, catching the eye of users right after seeing the page for the first time.
                 </p>
                 <p className='absolute bottom-0 text-md'>
                     Price: Contact Me
@@ -30,7 +30,7 @@ const Package = () =>{
                     3 Pages
                 </h2>
                 <p className='text-md m-4'>
-                    With the need of displaying your services, you may want a page dedidcated to explaning your services, for your bio,
+                    With the desire of displaying what you have to offer, you may want a page dedidcated to explaning your services, for your bio,
                     and for people to contact you.
                 </p>
                 <p className='absolute bottom-0 text-md'>

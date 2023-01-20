@@ -21,7 +21,7 @@ const Package = () =>{
                     the wedding, I can learn them and add them to my set.
                 </p>
                 <p className='absolute bottom-0 text-md'>
-                    Price: $350/hr
+                    Price: $300 + 200/hr
                 </p>
             </div>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>

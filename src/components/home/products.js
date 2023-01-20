@@ -44,7 +44,7 @@ const Product = () =>{
                     to small business needing a brouchure website of their product!
                     </p>
                     <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
-                        <Link href='/music'>
+                        <Link href='/webdev'>
                             Check It Out!
                         </Link>
                     </button>

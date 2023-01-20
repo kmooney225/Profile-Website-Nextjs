@@ -7,7 +7,7 @@ const Description = () =>{
             <div className='p-12 flex flex-col items-center justify-center'>
                 <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
                     
-                    <h2 className='text-6xl font-sacramento'>
+                    <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
                         Curious?
                     </h2>
                     <img 
@@ -27,7 +27,7 @@ const Description = () =>{
             <div className='p-12 flex flex-col items-center justify-center'>
                 <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
                     
-                    <h2 className='text-6xl font-sacramento'>
+                    <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
                         Meet Me
                     </h2>
                     <img 
@@ -45,8 +45,8 @@ const Description = () =>{
             <div className='p-12 flex flex-col items-center justify-center'>
                 <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
                     
-                    <h2 className='text-6xl font-sacramento'>
-                        Represent
+                    <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
+                        Succeed
                     </h2>
                     <img 
                         src={"./handshake.jpg"} 
@@ -55,7 +55,7 @@ const Description = () =>{
                     />
                     <p className='text-md m-4'>
                         Whether it is your chances of landing your dream job, or getting more customers,
-                        The website that represents your business should give you the best chance to put your 
+                        the website that represents your business should give you the best chance to put your 
                         foot forward.
                     </p>
                 </div>

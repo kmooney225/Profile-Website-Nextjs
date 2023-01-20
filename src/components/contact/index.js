@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone, 
     faEnvelope,
@@ -6,11 +6,53 @@ import {faPhone,
 } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram,
          faPinterest,
-         faFacebook,
-         faTiktok
+         faGithub,
+         faLinkedin
         } from '@fortawesome/free-brands-svg-icons';
 
+import { validateEmail, validateName, validateMessage } from "./API/Validation";
+import InLineError from "./API/InLineError";
+import { toast } from 'react-toastify';
+import Toast from './API/Toast';
+import { SendEmail } from "./API/mail";
+
 const Contact = () =>{
+
+    const [name,setName] = useState("")
+    const [nameError,setNameError] = useState("")
+    const [email,setEmail] = useState("")
+    const [emailError,setEmailError] = useState("")
+    const [message,setMessage] = useState("")
+    const [messageError,setMessageError] = useState("")
+    //const [buttonLoading, setButtonLoading] = useState(false)
+    const [send, setSend] = useState()
+
+    useEffect(() =>{
+        validateName({name,setNameError})
+        validateEmail({email,setEmailError})
+        validateMessage({message,setMessageError})
+    
+        if (send) {
+          toast.success(send.msg);
+          setName("")
+          setEmail("")
+          setMessage("")
+          setSend()
+        }
+      },[name,email,message,send])
+
+      const submitHandler = (e) => {
+        e.preventDefault();
+        //setButtonLoading(true);
+        if (!nameError & !emailError & !messageError) {
+          SendEmail({ name, email, message, setSend }).then(
+            () => {
+              //setButtonLoading(false);
+            }
+          );
+        }
+      };
+
     return(
         <section className="relative flex w-full min-h-screen justify-center items-center p-2 bg-black z-[2]">
             <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
@@ -25,47 +67,51 @@ const Contact = () =>{
                     </div>
                     <div className='flex flex-col space-y-6'>
                         <div className='inline-flex space-x-2 items-center'>
-                            <FontAwesomeIcon className='text-red-400 w-4' icon={faPhone} />
-                            <span>+(123) 456 7890</span>
-                        </div>
-                        <div className='inline-flex space-x-2 items-center'>
                             <FontAwesomeIcon className='text-red-400 w-4' icon={faEnvelope} />
-                            <span>example@me.com</span>
+                            <span>kevin.mooney.creates@gmail.com</span>
                         </div>
                         <div className='inline-flex space-x-2 items-center'>
                             <FontAwesomeIcon className='text-red-400 w-4' icon={faLocationDot} />
-                            <span>New York, United States</span>
+                            <span>Denver, Colorado, United States</span>
                         </div>
                     </div>
                     <div className='flex space-x-4'>
                         <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faInstagram} /></a>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faPinterest} /></a>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faFacebook} /></a>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faTiktok} /></a>
+                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faGithub} /></a>
+                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faLinkedin} /></a>
                     </div>
                 </div>
-                <div className='bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80'>
+                <div onSubmit={submitHandler} className='bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80'>
                     <form className='flex flex-col space-y-4'>
                         <div>
                             <label className='text-sm'>Your Name</label>
                             <input 
                                 type='text' 
-                                placeholder='Your name' 
+                                value={name}
+                                placeholder='Your name'
+                                onChange={(e) => setName(e.target.value)} 
                                 className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 
                             />
+                            {name && <InLineError error={nameError} />}
                         </div>
                         <div>
                             <label className='text-sm'>Email Address</label>
                             <input 
                                 type='text' 
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 placeholder='Email' 
                                 className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 
                             />
+                            {email && <InLineError error={emailError} />}
                         </div>
                         <div>
                             <label className='text-sm'>Message</label>
                             <textarea 
                                 type='text' 
+                                required
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                                 rows='4'
                                 placeholder='Type something meaningful here' 
                                 className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 

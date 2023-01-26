@@ -18,18 +18,18 @@ const Bio = () =>{
     }, []);
 
     return(
-        <div className='relative flex flex-col object-cover items-center justify-center h-full bg-fixed bg-center bg-transparent z-[2]'>
+        <div className='relative flex items-center justify-center h-full bg-fixed bg-center bg-transparent z-[2]'>
             <div 
                 style={{
                     opacity: opacity,
                 }}
-                className='absolute flex flex-col top-0 left-0 right-0 bottom-0 bg-black z-[2]'>
+                className='absolute top-0 left-0 right-0 bottom-0 bg-black z-[2]'>
             </div>
             <div 
                 style={{
                     backdropFilter: `${blur}`,
                 }}
-                className='absolute flex flex-col top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
+                className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
             </div>
             <div className='z-[2] w-[65%] h-full mt-4 p-6 rounded-md bg-red-600 text-white'>
                     <h2 className='flex text-6xl font-sacramento font-bold justify-center'>My Bio</h2>

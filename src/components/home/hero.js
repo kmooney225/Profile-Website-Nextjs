@@ -21,17 +21,19 @@ const Hero = () =>{
 
     return(
         <div 
-        className='flex items-center justify-center h-screen object-cover bg-fixed bg-center bg-cover'>
+        className='relative flex flex-col items-center justify-center h-screen bg-fixed bg-center bg-cover'>
             <div 
             style={{
                 opacity: opacity,
             }}
-            className='absolute top-0 left-0 right-0 bottom-0 bg-black z-[2]'></div>
+            className='absolute top-0 left-0 right-0 bottom-0 bg-black z-[2]'>
+            </div>
             <div 
             style={{
                 backdropFilter: `${blur}`,
             }}
-            className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'></div>
+            className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
+            </div>
             <div className='center p-5 text-white z-[2]'>
                 <h1 className='text-6xl md:text-7xl font-sacramento'>
                     Kevin Mooney

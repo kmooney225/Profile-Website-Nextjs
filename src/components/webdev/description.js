@@ -31,12 +31,12 @@ const Description = () =>{
                         Meet Me
                     </h2>
                     <img 
-                        src={"./handshake.jpg"} 
+                        src={"./ProgramPic.jpg"} 
                         alt="Handshake" 
                         className='bg-gray-300 rounded-md p-2 items-center justify-center w-full'
                     />
                     <p className='text-md m-4'>
-                        I am  a developer who is here to support your dreams of creating that landing page that
+                        I am a developer who is here to support your dreams of creating that landing page that
                         stands out, or a display of your talents.
                     </p>
                 </div>

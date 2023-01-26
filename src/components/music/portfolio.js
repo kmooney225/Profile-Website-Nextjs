@@ -9,19 +9,25 @@ const Portfolio = () =>{
                 Music Demo
             </h1>
             <div className='flex flex-col md:flex-row p-4'>
-                <iframe className='m-10 md:m-2 w-[80%] md:w-[50%]'
+                <iframe className='m-10 md:m-2 w-[80%] md:w-[33%]'
                     src="https://www.youtube.com/embed/ukYNf113pMg?start=140" 
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" 
                     allowFullScreen />
 
-                <iframe className='m-10 md:m-2 w-[80%] md:w-[50%]'
+                <iframe className='m-10 md:m-2 w-[80%] md:w-[33%]'
                     src="https://www.youtube.com/embed/VXkUa66s_WA" 
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" 
                     allowFullScreen />
+                <iframe className='m-10 md:m-2 w-[80%] md:w-[33%]' 
+                    src="https://www.youtube.com/embed/eBrZ_bs8Qik" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" 
+                    allowfullscreen />
             </div>
         </div>
     </div>

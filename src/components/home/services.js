@@ -1,55 +1,57 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Link from 'next/link';
 
-import { ReactComponent as Branch } from '../../assets/svgs/BranchSvg.svg';
-
-const Service = () =>{
-
-    const [opacity, setOpacity] = useState(0.65)
-    const [blur, setBlur] = useState('blur(0px)')
-    //botantical illustrations
-    //mail chimp
-    useEffect(()=>{
-        const changeBlur = () => {
-            if(window.scrollY >= 1600){
-                setBlur('blur(' + 0 + 'px)')
-                setOpacity(1)
-            } else {
-                setBlur('blur(' + window.scrollY/20 + 'px)')
-                setOpacity( 0.60 + window.scrollY/3000)
-            }
-        }
-        window.addEventListener('scroll', changeBlur);
-    }, []);
-
+const Product = () =>{
     return(
-        <div className='relative flex flex-col object-cover items-center justify-center h-screen bg-fixed bg-center bg-transparent z-[2]'>
-            <div 
-                style={{
-                    opacity: opacity,
-                }}
-                className='absolute top-0 left-0 right-0 bottom-0 bg-black z-[2]'>
-            </div>
-            <div 
-                style={{
-                    backdropFilter: `${blur}`,
-                }}
-                className='absolute flex flex-col justify-center top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
-            </div>
-            <div className='z-[2] w-2/3 h-full p-8 rounded-md bg-red-600 text-white'>
-                    <h2 className='flex text-5xl font-sacramento font-bold justify-center'>My Bio</h2>
-                    <div className='flex justify-center p-8'>
-                        <img 
-                        src={"./KevinFuji.jpg"} 
-                        alt="ProfilePic" 
-                        className='flex justify-center items-center w-full md:w-1/2 rounded-lg'/>
-                    </div>
-                    <p className='flex justify-center text-lg'>I am a guy with a sense for art. After 15 years of playing music as an multi-instrumentalist for
-                    different occasions and a strong career in tech, I have a dream to create beautiful services, tech and music alike. Welcome to 
-                    my website, and if you need to contact me, remember to go to contact page to send a message or book a time to talk!
+        <section className="relative flex flex-col p-16 object-cover items-center justify-center bg-fixed bg-center bg-black z-[3]">
+            <div className='flex flex-col md:flex-row'>
+                <div className='z-[2] p-16 rounded-md bg-red-600 items-center justify-center text-white md:w-1/2'>
+                    <h2 className='p-4 text-6xl font-sacramento'>
+                        Music
+                    </h2>
+                    <p className='text-lg m-4'>
+                        I offer services with music for different venues type. This include Weddings, resturants,
+                        and party venues.
                     </p>
+                    <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
+                        <Link href='/music'>
+                            Check It Out!
+                        </Link>
+                    </button>
                 </div>
-        </div>
+                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-1/2'>
+                    <img 
+                        src={"./music.jpg"} 
+                        alt="ProfilePic" 
+                        className='flex justify-center items-center w-full rounded-md'
+                    />
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row'>
+                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center text-white md:w-1/2'>
+                    <img 
+                        src={"./webdev.jpg"} 
+                        alt="ProfilePic" 
+                        className='flex justify-center items-center w-full rounded-md'
+                    />
+                </div>
+                <div className='z-[2] p-16 rounded-md bg-red-600 items-center justify-center text-white md:w-1/2'>
+                    <h2 className='p-4 text-6xl font-sacramento'>
+                        Web Dev
+                    </h2>
+                    <p className='text-lg m-4'>I create websites for different things, from professionals needing a digital portfolio 
+                    to small business needing a brouchure website of their product!
+                    </p>
+                    <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
+                        <Link href='/webdev'>
+                            Check It Out!
+                        </Link>
+                    </button>
+                </div>
+            </div>
+        </section>
     )
 }
 
-export default Service;
+export default Product;

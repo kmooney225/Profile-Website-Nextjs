@@ -43,7 +43,7 @@ const Package = () =>{
                 </h2>
                 <p className='text-md m-4'>
                     You may need a number of pages for the website that you need created as you may have
-                    many talents and/or services to grab your audiences' attention.
+                    many talents and/or services to grab your audiences attention.
                 </p>
                 <p className='absolute bottom-0 text-md'>
                     Price: Varies

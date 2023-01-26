@@ -75,9 +75,9 @@ const Contact = () =>{
                         </div>
                     </div>
                     <div className='flex space-x-4'>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faInstagram} /></a>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faGithub} /></a>
-                        <a href="#"><FontAwesomeIcon className='text-red-400 w-4' icon={faLinkedin} /></a>
+                        <a href="https://www.instagram.com/kmoney302/"><FontAwesomeIcon className='text-red-400 w-4' icon={faInstagram} /></a>
+                        <a href="https://github.com/kmooney225"><FontAwesomeIcon className='text-red-400 w-4' icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/kevin-mooney-b4abab165/"><FontAwesomeIcon className='text-red-400 w-4' icon={faLinkedin} /></a>
                     </div>
                 </div>
                 <div onSubmit={submitHandler} className='bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80'>

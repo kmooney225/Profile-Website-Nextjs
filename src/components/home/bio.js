@@ -18,7 +18,7 @@ const Bio = () =>{
     }, []);
 
     return(
-        <div className='relative flex flex-col object-cover items-center justify-center h-screen bg-fixed bg-center bg-transparent z-[2]'>
+        <div className='relative flex flex-col object-cover items-center justify-center h-full bg-fixed bg-center bg-transparent z-[2]'>
             <div 
                 style={{
                     opacity: opacity,

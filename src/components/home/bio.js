@@ -31,7 +31,7 @@ const Bio = () =>{
                 }}
                 className='absolute flex flex-col justify-center top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
             </div>
-            <div className='z-[2] w-[60%] h-[90%] p-8 rounded-md bg-red-600 text-white'>
+            <div className='z-[2] w-[60%] h-full p-8 rounded-md bg-red-600 text-white'>
                     <h2 className='flex text-6xl font-sacramento font-bold justify-center'>My Bio</h2>
                     <div className='flex justify-center p-8'>
                         <img 

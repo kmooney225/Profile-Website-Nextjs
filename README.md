@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![landingPage](https://user-images.githubusercontent.com/37048222/214935036-7143e687-fabc-44da-90db-2e8a9c4beaf6.png)
 
 # Learning Goals
 - To build a modern website using Next.js

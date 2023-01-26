@@ -31,13 +31,13 @@ const Bio = () =>{
                 }}
                 className='absolute flex flex-col justify-center top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
             </div>
-            <div className='z-[2] w-[60%] h-full p-8 rounded-md bg-red-600 text-white'>
+            <div className='z-[2] w-[70%] h-full p-6 rounded-md bg-red-600 text-white'>
                     <h2 className='flex text-6xl font-sacramento font-bold justify-center'>My Bio</h2>
-                    <div className='flex justify-center p-8'>
+                    <div className='flex justify-center p-4'>
                         <img 
                         src={"./KevinFuji.jpg"} 
                         alt="ProfilePic" 
-                        className='flex justify-center items-center w-full md:w-1/2 rounded-lg'/>
+                        className='flex justify-center items-center w-full w-full md:w-1/2 rounded-lg'/>
                     </div>
                     <p className='flex justify-center text-md md:text-lg'>I am a guy with a sense for art. After 15 years of playing music as an multi-instrumentalist for
                     different occasions and a strong career in tech, I have a dream to create beautiful services, tech and music alike. Welcome to 

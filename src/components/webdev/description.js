@@ -5,7 +5,7 @@ const Description = () =>{
     return(
         <div className='h-auto bg-black bg-fixed z-[2] object-cover'>
             <div className='p-12 flex flex-col items-center justify-center'>
-                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%] lg:w-[40%]'>
                     
                     <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
                         Curious?
@@ -25,7 +25,7 @@ const Description = () =>{
             </div>
 
             <div className='p-12 flex flex-col items-center justify-center'>
-                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%] lg:w-[40%]'>
                     
                     <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
                         Meet Me
@@ -43,7 +43,7 @@ const Description = () =>{
             </div>
 
             <div className='p-12 flex flex-col items-center justify-center'>
-                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%]'>
+                <div className='p-4 rounded-md bg-red-600 text-white w-full h-auto md:w-[70%] lg:w-[40%]'>
                     
                     <h2 className='flex items-center justify-center mb-6 text-6xl font-sacramento'>
                         Succeed

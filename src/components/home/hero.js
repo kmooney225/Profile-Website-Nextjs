@@ -33,10 +33,9 @@ const Hero = () =>{
             }}
             className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'></div>
             <div className='center p-5 text-white z-[2]'>
-                <h1 className='text-6xl md:text-7xl font-sacramento after:bg-white after:rounded-lg'>
+                <h1 className='text-6xl md:text-7xl font-sacramento'>
                     Kevin Mooney
                     </h1>
-                {/* <h2 className='text-2xl p-8'>Developing beautiful websites and creating beautiful music</h2> */}
             </div>
         </div>
     )

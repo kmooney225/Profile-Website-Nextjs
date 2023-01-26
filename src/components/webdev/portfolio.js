@@ -69,7 +69,7 @@ const Portfolio = () =>{
                         </div>
                         <div className='absolute bottom-2 right-2 h-10 md:h-10 rounded-md border-2 border-gray-200 text-white w-10'>
                             <a href='https://github.com/kmooney225/rpg-portfolio-site'>
-                                <FontAwesomeIcon className='text-white' icon={faCode} />
+                                <FontAwesomeIcon icon={faCode} />
                             </a>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const Portfolio = () =>{
                     </div>
                     <div className='absolute bottom-2 right-2 h-10 rounded-md border-2 border-gray-200 text-white w-10'>
                         <a href='https://github.com/kmooney225/Music-Player'>
-                            <FontAwesomeIcon className='text-white' icon={faCode} />
+                            <FontAwesomeIcon icon={faCode} />
                         </a>
                     </div>
                 </div>

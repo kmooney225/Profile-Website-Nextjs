@@ -13,6 +13,6 @@ export const SendEmail = async ({
         setSend(res.data);
       }
     } catch (error) {
-      alert(error.response.data.message + " not working");
+      alert( " not working");
     }
   };

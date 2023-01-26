@@ -48,7 +48,7 @@ const Portfolio = () =>{
 
                     <div className='h-[32em]  relative p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[33%]'>
                         <h2 className='flex items-center justify-center mb-6 text-3xl font-sacramento'>
-                            3D Tetromino
+                            RPG-Portfolio
                         </h2>
                         <img 
                             src={"./rpg-portfolio.png"} 

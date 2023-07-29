@@ -21,7 +21,7 @@ const Package = () =>{
                     the wedding, I can learn them and add them to my set.
                 </p>
                 <p className='absolute bottom-0 text-md'>
-                    Price: $300 + 200/hr
+                    Price: From $500
                 </p>
             </div>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>
@@ -32,7 +32,7 @@ const Package = () =>{
                     I will have a set of songs for different venues, from restaurants to coffee shops
                 </p>
                 <p className='absolute bottom-0 text-md'>
-                    Price: $175/hr
+                    Price: from $250/hr
                 </p>
             </div>
             <div className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-transparent border-4 border-gray-200 text-white md:w-[30%]'>

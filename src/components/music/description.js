@@ -3,9 +3,9 @@ import React from 'react';
 const Description = () =>{
 
     return(
-    <div className='h-auto bg-gradient-to-b from-black via-gray-900 to-black bg-fixed z-[2] object-cover space-y-8'>
-        <div className='p-12 flex flex-col space-y-8'>
-            <div className='p-6 rounded-md bg-red-600 text-white w-full md:w-[40%] shadow-lg'>
+        <div className='h-auto bg-gradient-to-b from-black via-gray-900 to-black bg-fixed z-[2] object-cover space-y-8'>
+        <div className='p-5 flex flex-col space-y-8'>
+            <div className='p-6 rounded-md bg-red-700 text-white w-full md:w-[40%] shadow-lg'>
                     <h2 className='flex items-center justify-center mb-6 text-6xl font-bold font-sacramento'>
                         Cherish
                     </h2>
@@ -45,13 +45,13 @@ const Description = () =>{
             </div>
 
             <div className='p-6 rounded-md bg-red-600 text-white md:w-[40%] shadow-lg'>
-                    <h2 className='flex items-center justify-center mb-6 text-6xl font-bold font-sacramento'>
-                        Imagine
-                    </h2>
-                    <p className='text-lg m-4 text-center'>
-                        With the perfect background music, any precious moment will be sweeter, whether it is a small party to celebrate
-                        with your friends, or the best wedding anyone has ever planned.
-                    </p>
+                <h2 className='flex items-center justify-center mb-6 text-6xl font-bold font-sacramento'>
+                    Imagine
+                </h2>
+                <p className='text-lg m-4 text-center'>
+                    With the perfect background music, any precious moment will be sweeter, whether it is a small party to celebrate
+                    with your friends, or the best wedding anyone has ever planned.
+                </p>
             </div>
         </div>
     </div>

@@ -69,11 +69,11 @@ const Bio = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 1 }}
                     className='text-md md:text-lg leading-relaxed px-6 py-2'>
-                    Welcome to my webpage, the harmonious intersection of technology and music. I've been lucky enough to spend the past 15 years of my life playing music on a variety of instruments, and I've had the privilege of doing so at many different events and celebrations.
+                    Welcome to my webpage, the harmonious intersection of technology and music. I have been lucky enough to spend the past 15 years of my life playing music on a variety of instruments, and I have had the privilege of doing so at many different events and celebrations.
                     <br /> <br />
-                    But hey, that's not all! I'm also involved in the tech industry, using my passion and experience to build innovative and useful services. I believe that music and tech can come together to make something really special - and that's exactly what I'm trying to do here.
+                    I am also involved in the tech industry, using my passion and experience to build innovative and useful services. I believe that music and tech can come together to make something really special - and that is exactly what I am trying to do here.
                     <br /> <br />
-                    So go on, have a look around my website. If you're curious about what I do, or if you have any questions, don't hesitate to reach out! You can drop me a message or schedule a time to chat on the contact page. I can't wait to hear from you!
+                    If you are curious about what I do, or if you have any questions, don't hesitate to reach out! You can drop me a message or schedule a time to chat on the contact page. I cannot wait to hear from you!
                 </p>
             </div>
         </div>

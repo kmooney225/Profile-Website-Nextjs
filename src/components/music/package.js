@@ -15,7 +15,7 @@ const Package = () => {
                         Weddings and Ceremonies
                     </h2>
           <p className='text-md m-4'>
-            I'll bring a default playlist of wedding appropriate songs. If you have any special requests, I can learn and add them to my set.
+            I will bring a default playlist of wedding appropriate songs. If you have any special requests, I can learn and add them to my set.
           </p>
           <p className='absolute bottom-0 text-md'>
             Price: Starts from $500

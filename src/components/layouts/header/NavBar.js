@@ -81,11 +81,11 @@ const Navbar = () => {
                     <li className={router.pathname === '/' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link onClick={handlePath}  href='/'>Bio</Link>
                     </li>
-                    <li className={router.pathname === '/webdev' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
-                        <Link onClick={handlePath}  href='/webdev'>Web Dev</Link>
-                    </li>
                     <li className={router.pathname === '/music' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link onClick={handlePath}  href='/music'>Music</Link>
+                    </li>
+                    <li className={router.pathname === '/webdev' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
+                        <Link onClick={handlePath}  href='/webdev'>Web Dev</Link>
                     </li>
                     <li className={router.pathname === '/contact' ? 'p-4 text-white bg-red-500 hover:text-gray-200 rounded-md rounded-xl transition-all duration-200 ease-linear' : 'p-4 hover:text-gray-500 transition-all duration-200 ease-linear'}>
                         <Link onClick={handlePath}  href='/contact'>Contact</Link>

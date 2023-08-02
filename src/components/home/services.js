@@ -1,55 +1,49 @@
 import React from 'react';
-import Link from 'next/link';
 
-const Product = () =>{
+const sections = [
+    {
+        title: 'Music',
+        description: 'From enchanting wedding melodies to restaurant rhythms and energetic party beats, I deliver captivating musical experiences that transform any venue into a symphony of moments to remember.',
+        link: '/music',
+        image: './music.jpg',
+        alt: 'A photo representing music services'
+    },
+    {
+        title: 'Web Dev',
+        description: 'With crafting captivating digital landscapes ranging from professional portfolios to engaging product showcases, I bring your unique story to life on the web.',
+        link: '/webdev',
+        image: './webdev.jpg',
+        alt: 'A photo representing web development services'
+    }
+]
+
+const Product = () => {
     return(
         <section className="relative flex flex-col p-12 items-center justify-center bg-fixed bg-center bg-black z-[3]">
-            <div className='flex flex-col md:flex-row'>
-                <div className='z-[2] p-12 rounded-md bg-red-600 items-center justify-center text-white md:w-1/2'>
-                    <h2 className='p-4 text-5xl font-sacramento'>
-                        Music
-                    </h2>
-                    <p className='text-md md:text-lg m-4'>
-                        I offer services with music for different venues type. This include Weddings, resturants,
-                        and party venues.
-                    </p>
-                    <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
-                        <Link href='/music'>
-                            Check It Out!
-                        </Link>
-                    </button>
+            {sections.map((section, index) => (
+                <div className={`flex flex-col md:flex-row items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 my-5 rounded-lg shadow-lg overflow-hidden ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} key={index}>
+                    <div className='z-[2] p-12 rounded-md bg-red-600 items-center justify-center text-white md:w-1/2'>
+                        <h2 className='p-4 text-5xl font-sacramento'>
+                            {section.title}
+                        </h2>
+                        <p className='text-md md:text-lg m-4'>
+                            {section.description}
+                        </p>
+                        <button href={section.link}>
+                            <a className="inline-block bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white py-2 px-4 border-2 border-gray-400 hover:border-transparent rounded-lg mt-4 transition-colors duration-300">
+                                Check It Out!
+                            </a>
+                        </button>
+                    </div>
+                    <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-1/2'>
+                        <img 
+                            src={section.image} 
+                            alt={section.alt} 
+                            className='w-full object-cover h-64 md:h-auto md:w-full rounded-md'
+                        />
+                    </div>
                 </div>
-                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-1/2'>
-                    <img 
-                        src={"./music.jpg"} 
-                        alt="ProfilePic" 
-                        className='flex justify-center items-center w-full rounded-md'
-                    />
-                </div>
-            </div>
-
-            <div className='flex flex-col md:flex-row'>
-                <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center text-white md:w-1/2'>
-                    <img 
-                        src={"./webdev.jpg"} 
-                        alt="ProfilePic" 
-                        className='flex justify-center items-center w-full rounded-md'
-                    />
-                </div>
-                <div className='z-[2] p-12 rounded-md bg-red-600 items-center justify-center text-white md:w-1/2'>
-                    <h2 className='p-4 text-5xl font-sacramento'>
-                        Web Dev
-                    </h2>
-                    <p className='text-md md:text-lg m-4'>I create websites for different things, from professionals needing a digital portfolio 
-                    to small business needing a brouchure website of their product!
-                    </p>
-                    <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
-                        <Link href='/webdev'>
-                            Check It Out!
-                        </Link>
-                    </button>
-                </div>
-            </div>
+            ))}
         </section>
     )
 }

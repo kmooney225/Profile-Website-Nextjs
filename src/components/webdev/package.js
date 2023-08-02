@@ -7,7 +7,7 @@ const Package = () =>{
     return(
         <div className='flex flex-col items-center justify-center h-auto bg-black z-[2] object-cover'>
             <div className='center p-5 text-white z-[2]'>
-                <h1 className='text-7xl  font-sacramento after:bg-white after:rounded-lg'>
+                <h1 className='text-7xl font-sacramento after:bg-white after:rounded-lg'>
                     Package for Website Production
                 </h1>
             </div>
@@ -53,12 +53,11 @@ const Package = () =>{
         <h3 className='p-16 text-3xl text-white'>
             Interested? Contact me!
         </h3>
-        
         <button className="bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white p-4 border-2 border-gray-400 hover:border-transparent rounded-lg">
-                <Link href='/contact'>
-                    Contact
-                </Link>
-        </button>  
+            <Link href='/contact'>
+            Contact
+            </Link>
+        </button> 
     </div>
     )
 }

@@ -73,7 +73,7 @@ const Bio = () => {
                     <br /> <br />
                     I am also involved in the tech industry, using my passion and experience to build innovative and useful services. I believe that music and tech can come together to make something really special - and that is exactly what I am trying to do here.
                     <br /> <br />
-                    If you are curious about what I do, or if you have any questions, don't hesitate to reach out! You can drop me a message or schedule a time to chat on the contact page. I cannot wait to hear from you!
+                    If you are curious about what I do, or if you have any questions, do not hesitate to reach out! You can drop me a message or schedule a time to chat on the contact page. I cannot wait to hear from you!
                 </p>
             </div>
         </div>

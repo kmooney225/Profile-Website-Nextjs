@@ -39,7 +39,7 @@ const Package = () => {
             Private, Customized, or Large Events
           </h2>
           <p className='text-md m-4'>
-            For larger venues, I offer customized setups and arrangements according to the event's requirements.
+            For larger venues, I offer customized setups and arrangements according to the requirements of the events.
           </p>
           <p className='absolute bottom-0 text-md'>
             Price: Varies based on requirements

@@ -29,6 +29,39 @@
     min-height: 100%;
   }
 
+  .slide-right {
+    animation: slide-right 0.5s forwards;
+}
+
+.slide-left {
+    animation: slide-left 0.5s forwards;
+}
+
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 @import './header';
 @import './contact';

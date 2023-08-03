@@ -10,13 +10,17 @@ const Navbar = () => {
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
     const [boxShadow, setBoxShadow] = useState('0px')
+    const [animationDirection, setAnimationDirection] = useState('right');
+
     const router = useRouter();
-//want to add additional animation whenever the navbar is pressed. I want the words to fade in and out softly and I want a white wave
+
     const handleNav = () => {
+        setAnimationDirection(nav ? 'right' : 'left');
         setNav(!nav)
     }
 
     const handlePath = (e) => {
+        setAnimationDirection('left');
         setNav(false);
         if (router.pathname !== '/'){
             setColor('#ffffff')
@@ -106,19 +110,20 @@ const Navbar = () => {
                     }
                     >
                     <ul>
-                        <li className='p-4 text-4xl hover:text-gray-500'>
+                    <li className={`p-4 text-4xl hover:text-gray-500 slide-${animationDirection}`}>
                             <Link onClick={handleNav} href='/'>Bio</Link>
                         </li>
-                        <li className='p-4 text-4xl hover:text-gray-500'>
+                        <li className={`p-4 text-4xl hover:text-gray-500 slide-${animationDirection}`}>
                             <Link onClick={handleNav} href='/music'>Music</Link>
                         </li>
-                        <li className='p-4 text-4xl hover:text-gray-500'>
+                        <li className={`p-4 text-4xl hover:text-gray-500 slide-${animationDirection}`}>
                             <Link onClick={handleNav} href='/webdev'>Web Dev</Link>
                         </li>
-                        <li className='p-4 text-4xl hover:text-gray-500'>
+                        <li className={`p-4 text-4xl hover:text-gray-500 slide-${animationDirection}`}>
                             <Link onClick={handleNav} href='/contact'>Contact</Link>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </div>

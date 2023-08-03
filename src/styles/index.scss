@@ -85,14 +85,13 @@
   margin: 10px 0;
 }
 
-/* Contact.css */
 .bg-gradient {
   background: linear-gradient(90deg, #000000 0%, #780206 100%);
 }
 
-.spin-icon:hover {
-  transition: 0.5s;
-  transform: rotate(360deg);
+.bg-backdrop {
+  backdrop-filter: blur(20px);
+  background-color: rgba(230, 0, 0, 0.3);
 }
 
 .enlarge-icon:hover {
@@ -108,6 +107,8 @@
   width: 60px;
   height: 60px;
 }
+
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

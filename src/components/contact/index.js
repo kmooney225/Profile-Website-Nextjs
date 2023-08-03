@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faEnvelope,
     faLocationDot,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 import { 
     faInstagram,
     faGithub,
@@ -22,7 +22,6 @@ const Contact = () =>{
     const [emailError,setEmailError] = useState("");
     const [message,setMessage] = useState("");
     const [messageError,setMessageError] = useState("");
-    const [buttonLoading, setButtonLoading] = useState(false);
     const [send, setSend] = useState();
 
     useEffect(() =>{
@@ -41,20 +40,14 @@ const Contact = () =>{
 
     const submitHandler = (e) => {
         e.preventDefault();
-        setButtonLoading(true);
         if (!nameError & !emailError & !messageError) {
-          SendEmail({ name, email, message, setSend }).then(
-            () => {
-              setButtonLoading(false);
-            }
-          );
+          SendEmail({ name, email, message, setSend });
         }
     };
 
     return (
         <section className="relative flex w-full min-h-screen justify-center items-center p-2 bg-gradient z-[2]">
-            <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
-                <div className='flex flex-col space-y-8 justify-between'>
+            <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-backdrop w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">                <div className='flex flex-col space-y-8 justify-between'>
                     <div>
                         <h2 className='font-bold text-4xl tracking-wide'>
                             Contact Me

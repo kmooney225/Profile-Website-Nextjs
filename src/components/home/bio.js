@@ -49,7 +49,7 @@ const Bio = () => {
                     visible: { opacity: 1, transition: { duration: 1.5 } },
                     hidden: { opacity: 0 }
                 }}
-                className='z-[2] w-[80%] md:w-[65%] h-full m-16 p-8 rounded-lg text-white text-center md:text-left space-y-10'
+                className='z-[2] w-[80%] md:w-[55%] h-full m-16 p-8 rounded-lg text-white text-center md:text-left space-y-10'
                 style={{
                     background: `linear-gradient(135deg, rgba(220, 38, 38, .9), rgba(236, 72, 153, 0.7))`
                 }}>

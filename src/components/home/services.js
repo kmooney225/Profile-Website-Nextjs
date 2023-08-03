@@ -29,11 +29,9 @@ const Product = () => {
                         <p className='text-md md:text-lg m-4'>
                             {section.description}
                         </p>
-                        <button href={section.link}>
-                            <a className="inline-block bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white py-2 px-4 border-2 border-gray-400 hover:border-transparent rounded-lg mt-4 transition-colors duration-300">
-                                Check It Out!
-                            </a>
-                        </button>
+                        <a href={section.link} className="inline-block bg-transparent hover:bg-gray-800 text-white font-semibold hover:text-white py-2 px-4 border-2 border-gray-400 hover:border-transparent rounded-lg mt-4 transition-colors duration-300">
+                            Check It Out!
+                        </a>
                     </div>
                     <div className='z-[2] bg-gray-300 rounded-md p-4 items-center justify-center md:w-1/2'>
                         <img 
@@ -49,3 +47,4 @@ const Product = () => {
 }
 
 export default Product;
+

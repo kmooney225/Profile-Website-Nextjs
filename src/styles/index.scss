@@ -59,34 +59,8 @@
     }
 }
 
-.music-player {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-}
-
-.audio-player {
-  margin: 20px 0;
-}
-
-.playlist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.song {
-  cursor: pointer;
-  margin: 10px 0;
-}
-
 .bg-gradient {
-  background: linear-gradient(270deg, #000000 0%, #780206 100%);
+  background: linear-gradient(270deg, #000000 0%, #ae050a 100%);
 }
 
 .bg-backdrop {

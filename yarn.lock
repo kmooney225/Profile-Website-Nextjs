@@ -1377,6 +1377,11 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
+"@remix-run/router@1.7.2":
+  "integrity" "sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A=="
+  "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.7.2.tgz"
+  "version" "1.7.2"
+
 "@restart/hooks@^0.4.9":
   "integrity" "sha512-Ft/ncTULZN6ldGHiF/k5qt72O8JyRMOeg0tApvCni8LkoiEahO+z3TNxfXIVGy890YtWVDvJAl662dVJSJXvMw=="
   "resolved" "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.11.tgz"
@@ -4173,7 +4178,7 @@
     "uncontrollable" "^7.2.1"
     "warning" "^4.0.3"
 
-"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=15", "react-dom@>=16", "react-dom@>=16.14.0", "react-dom@>=16.6.0":
+"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=15", "react-dom@>=16", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -4251,6 +4256,21 @@
     "prop-types" "^15.5.8"
     "react-easy-swipe" "^0.0.21"
 
+"react-router-dom@^6.14.2":
+  "integrity" "sha512-5pWX0jdKR48XFZBuJqHosX3AAHjRAzygouMTyimnBPOLdY3WjzUSKhus2FVMihUFWzeLebDgr4r8UeQFAct7Bg=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.14.2.tgz"
+  "version" "6.14.2"
+  dependencies:
+    "@remix-run/router" "1.7.2"
+    "react-router" "6.14.2"
+
+"react-router@6.14.2":
+  "integrity" "sha512-09Zss2dE2z+T1D03IheqAFtK4UzQyX8nFPWx6jkwdYzGLXd5ie06A6ezS2fO6zJfEb/SpG6UocN2O1hfD+2urQ=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.14.2.tgz"
+  "version" "6.14.2"
+  dependencies:
+    "@remix-run/router" "1.7.2"
+
 "react-scroll-trigger@^0.6.14":
   "integrity" "sha512-Z7l9CMJTU4uPArv/3XaJzCtSej+JeLpbev1X7JxAmZwGf16ya5mxqjeeQ/5O4thvOVK0ZWhgyQf52tH1hg1O7Q=="
   "resolved" "https://registry.npmjs.org/react-scroll-trigger/-/react-scroll-trigger-0.6.14.tgz"
@@ -4311,7 +4331,7 @@
     "prop-types" "15.8.1"
     "youtube-player" "5.5.2"
 
-"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.12.0", "react@>=0.14.0", "react@>=0.14.1", "react@>=15", "react@>=15.0.0", "react@>=16", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8.0", "react@15.x.x || 16.x.x || 17.x.x || 18.x.x":
+"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.12.0", "react@>=0.14.0", "react@>=0.14.1", "react@>=15", "react@>=15.0.0", "react@>=16", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@15.x.x || 16.x.x || 17.x.x || 18.x.x":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

@@ -11,17 +11,18 @@ const Navbar = () => {
     const [textColor, setTextColor] = useState('white')
     const [boxShadow, setBoxShadow] = useState('0px')
     const router = useRouter();
-
+//want to add additional animation whenever the navbar is pressed. I want the words to fade in and out softly and I want a white wave
     const handleNav = () => {
         setNav(!nav)
     }
 
     const handlePath = (e) => {
+        setNav(false);
         if (router.pathname !== '/'){
             setColor('#ffffff')
             setTextColor('#000000')
             setBoxShadow('1px 2px 9px')
-    }
+        }
         else {
             if(window.scrollY >= 600){
                 setColor('#ffffff')
@@ -33,7 +34,7 @@ const Navbar = () => {
                 setBoxShadow('0px 0px 0px')
             }
         }
-      }
+    }
 
     useEffect(()=>{
         const changeColor = () => {
@@ -93,8 +94,9 @@ const Navbar = () => {
                 </ul>
                 <div onClick={handleNav} className='block sm:hidden z-10'>
                     {nav 
-                    ? <AiOutlineClose size={20} style={{color: `${textColor}`}}/> 
-                    : <AiOutlineMenu size={20} style={{color: `${textColor}`}}/>}
+                    ? <AiOutlineClose size={20} style={{color: 'white'}}/> 
+                    : <AiOutlineMenu size={20} style={{color: `${textColor}`}}/>
+                    }
                 </div>
 
                 <div className={
@@ -108,10 +110,10 @@ const Navbar = () => {
                             <Link onClick={handleNav} href='/'>Bio</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link onClick={handleNav} href='/webdev'>Web Dev</Link>
+                            <Link onClick={handleNav} href='/music'>Music</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
-                            <Link onClick={handleNav} href='/music'>Music</Link>
+                            <Link onClick={handleNav} href='/webdev'>Web Dev</Link>
                         </li>
                         <li className='p-4 text-4xl hover:text-gray-500'>
                             <Link onClick={handleNav} href='/contact'>Contact</Link>

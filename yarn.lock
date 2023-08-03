@@ -4059,6 +4059,11 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
+"react-audio-analyser@^1.0.0":
+  "integrity" "sha512-wFxqgIhrjkohNWxdzN3uD0s7tCZRiGWIUmE4hzR0goWnY0NRmPvJkKZuXTU48WIvewVYe4ZksmPGyaFLAuO86Q=="
+  "resolved" "https://registry.npmjs.org/react-audio-analyser/-/react-audio-analyser-1.0.0.tgz"
+  "version" "1.0.0"
+
 "react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=15", "react-dom@>=16":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"

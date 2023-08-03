@@ -4,21 +4,16 @@ module.exports = {
 		'./pages/**/*.js'],
 	theme: {
 		extend: {
+			boxShadow: {
+				'neumorphic': '20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff',
+			  },
 			fontFamily: {
 				sacramento: ['Sacramento'],
 			  },
 			colors: {
-				current: 'currentColor',
-				'yellow-green': '#ECF87F',
-				'lime-green': '#81B622',
-				'olive': '#3D550C',
-				'olive-green': '#59981A',
-				'smokey-white':'#f2f2f2',
-				'dark-green': '#202000',
-				'sand-dollar': '#EFCFA0',
-				'gold': '#E1A140',
-				'burnt-orange': '#914110',
-				'burgundy': '#532200',
+				primary: '#111',
+				secondary: '#333',
+				accent: '#ff0034',
 			},
 		},
 	},

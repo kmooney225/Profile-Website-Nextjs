@@ -9,7 +9,6 @@ import {
     faGithub,
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
-
 import { validateEmail, validateName, validateMessage } from "./API/Validation";
 import InLineError from "./API/InLineError";
 import { toast } from 'react-toastify';
@@ -17,43 +16,43 @@ import { SendEmail } from "./API/mail";
 
 const Contact = () =>{
 
-    const [name,setName] = useState("")
-    const [nameError,setNameError] = useState("")
-    const [email,setEmail] = useState("")
-    const [emailError,setEmailError] = useState("")
-    const [message,setMessage] = useState("")
-    const [messageError,setMessageError] = useState("")
-    //const [buttonLoading, setButtonLoading] = useState(false)
-    const [send, setSend] = useState()
+    const [name,setName] = useState("");
+    const [nameError,setNameError] = useState("");
+    const [email,setEmail] = useState("");
+    const [emailError,setEmailError] = useState("");
+    const [message,setMessage] = useState("");
+    const [messageError,setMessageError] = useState("");
+    const [buttonLoading, setButtonLoading] = useState(false);
+    const [send, setSend] = useState();
 
     useEffect(() =>{
-        validateName({name,setNameError})
-        validateEmail({email,setEmailError})
-        validateMessage({message,setMessageError})
+        validateName({name,setNameError});
+        validateEmail({email,setEmailError});
+        validateMessage({message,setMessageError});
     
         if (send) {
           toast.success(send.msg);
-          setName("")
-          setEmail("")
-          setMessage("")
-          setSend()
+          setName("");
+          setEmail("");
+          setMessage("");
+          setSend();
         }
-      },[name,email,message,send])
+    },[name,email,message,send]);
 
-      const submitHandler = (e) => {
+    const submitHandler = (e) => {
         e.preventDefault();
-        //setButtonLoading(true);
+        setButtonLoading(true);
         if (!nameError & !emailError & !messageError) {
           SendEmail({ name, email, message, setSend }).then(
             () => {
-              //setButtonLoading(false);
+              setButtonLoading(false);
             }
           );
         }
-      };
+    };
 
-    return(
-        <section className="relative flex w-full min-h-screen justify-center items-center p-2 bg-black z-[2]">
+    return (
+        <section className="relative flex w-full min-h-screen justify-center items-center p-2 bg-gradient z-[2]">
             <div className="flex flex-col md:flex-row mt-20 md:space-x-40 md:space-y-0 space-y-6 bg-red-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
                 <div className='flex flex-col space-y-8 justify-between'>
                     <div>
@@ -75,9 +74,9 @@ const Contact = () =>{
                         </div>
                     </div>
                     <div className='flex space-x-4'>
-                        <a href="https://www.instagram.com/kmoney302/"><FontAwesomeIcon className='text-red-400 w-4' icon={faInstagram} /></a>
-                        <a href="https://github.com/kmooney225"><FontAwesomeIcon className='text-red-400 w-4' icon={faGithub} /></a>
-                        <a href="https://www.linkedin.com/in/kevin-mooney-b4abab165/"><FontAwesomeIcon className='text-red-400 w-4' icon={faLinkedin} /></a>
+                        <a href="https://www.instagram.com/kmoney302/"><FontAwesomeIcon className='text-red-400 w-4 spin-icon enlarge-icon' icon={faInstagram} /></a>
+                        <a href="https://github.com/kmooney225"><FontAwesomeIcon className='text-red-400 w-4 spin-icon enlarge-icon' icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/kevin-mooney-b4abab165/"><FontAwesomeIcon className='text-red-400 w-4 spin-icon enlarge-icon' icon={faLinkedin} /></a>
                     </div>
                 </div>
                 <div onSubmit={submitHandler} className='bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80'>

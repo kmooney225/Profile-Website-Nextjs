@@ -46,10 +46,13 @@ const Bio = () => {
                 initial="hidden"
                 animate={controls}
                 variants={{
-                  visible: { opacity: 1, transition: { duration: 1.5 } },
-                  hidden: { opacity: 0 }
+                    visible: { opacity: 1, transition: { duration: 1.5 } },
+                    hidden: { opacity: 0 }
                 }}
-                className='z-[2] w-[80%] md:w-[65%] h-full m-16 p-8 rounded-lg bg-gradient-to-r from-red-600 to-pink-500 text-white text-center md:text-left space-y-10'>
+                className='z-[2] w-[80%] md:w-[65%] h-full m-16 p-8 rounded-lg text-white text-center md:text-left space-y-10'
+                style={{
+                    background: `linear-gradient(135deg, rgba(220, 38, 38, .9), rgba(236, 72, 153, 0.7))`
+                }}>
                 <h2 
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

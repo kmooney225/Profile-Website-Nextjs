@@ -65,20 +65,6 @@ const Portfolio = () => {
                 {videoPlayers}
             </Carousel>
         </div>
-        <div className='flex flex-col items-center justify-center mt-8'>
-            <h3 className='text-3xl text-white mb-4'>
-                Interested? Contact me!
-            </h3>
-                
-            <button 
-                className="text-white font-bold py-2 px-4 rounded"
-                style={{ background: 'linear-gradient(to right, rgba(220, 38, 38, 1), rgba(236, 64, 122, 1))' }}
-            >
-                <Link href='/contact'>
-                    Contact
-                </Link>
-            </button>
-        </div>  
       </div>
     );
 };

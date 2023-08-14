@@ -60,7 +60,7 @@ const LogosDisplay = () => {
   }, []);
 
   return (
-    <div ref={containerRef} style={{ backgroundColor: 'black', margin: '4px 0 4px 0', overflow: 'hidden', width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <div ref={containerRef} style={{ backgroundColor: 'black', overflow: 'hidden', width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       <h1 style={{ color: 'white', fontFamily: 'Sacramento', fontSize: '4em', textAlign: 'center', margin: '20px 0' }}>
         Brands I Have Worked With
       </h1>

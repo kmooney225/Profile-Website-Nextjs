@@ -12,8 +12,8 @@ export default function Testimonials() {
     ];
   
     return (
-      <div className="flex flex-col items-center p-8 bg-black text-white">
-        <h1 className="text-8xl m-4 font-sacramento">Testimonials</h1>
+      <div className="flex flex-col items-center p-full w-auto bg-black text-white">
+        <h1 className="text-6xl m-4 font-sacramento">Testimonials</h1>
         {testimonials.map((testimonial, index) => (
           <div
             key={index}

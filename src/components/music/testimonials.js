@@ -21,7 +21,7 @@ export default function Testimonials() {
             style={{ background: "radial-gradient(circle, red, black)" }}
           >
             <p className="text-lg italic mb-2">"{testimonial.text}"</p>
-            <p className="text-md font-bold text-right">- {testimonial.author}</p>
+            <p className="text-md font-bold text-right">{testimonial.author}</p>
           </div>
         ))}
       </div>

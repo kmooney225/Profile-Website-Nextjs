@@ -9,7 +9,7 @@ import {
     faGithub,
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
-import { validateEmail, validateName, validateMessage } from "./API/Validation";
+import { validateEmail, validateName, validateMessage, validateTitle} from "./API/Validation";
 import InLineError from "./API/InLineError";
 import { toast } from 'react-toastify';
 import { SendEmail } from "./API/mail";
@@ -19,6 +19,8 @@ const Contact = () =>{
     const [name,setName] = useState("");
     const [nameError,setNameError] = useState("");
     const [email,setEmail] = useState("");
+    const [title,setTitle] = useState("");
+    const [titleError,setTitleError] = useState("");
     const [emailError,setEmailError] = useState("");
     const [message,setMessage] = useState("");
     const [messageError,setMessageError] = useState("");
@@ -28,11 +30,13 @@ const Contact = () =>{
         validateName({name,setNameError});
         validateEmail({email,setEmailError});
         validateMessage({message,setMessageError});
+        validateTitle({title,setTitleError});
     
         if (send) {
           toast.success(send.msg);
           setName("");
           setEmail("");
+          setTitle("");
           setMessage("");
           setSend();
         }
@@ -40,7 +44,7 @@ const Contact = () =>{
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if (!nameError & !emailError & !messageError) {
+        if (!nameError & !emailError & !titleError & !messageError) {
           SendEmail({ name, email, message, setSend });
         }
     };
@@ -95,6 +99,17 @@ const Contact = () =>{
                                 className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 
                             />
                             {email && <InLineError error={emailError} />}
+                        </div>
+                        <div>
+                            <label className='text-sm'>Title</label>
+                            <input 
+                                type='text' 
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
+                                placeholder='Title' 
+                                className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 
+                            />
+                            {title && <InLineError error={titleError} />}
                         </div>
                         <div>
                             <label className='text-sm'>Message</label>

@@ -13,6 +13,14 @@ const validateEmail = ({ email, setEmailError }) => {
       ? setNameError('Name cannot be more than 50 characters')
       : setNameError('');
   };
+
+  const validateTitle = ({ title, setTitleError }) => {
+    return title && title.length < 3
+      ? setTitleError('Title cannot be less than 3 characters')
+      : title && title.length > 50
+      ? setTitleError('Title cannot be more than 40 characters')
+      : setTitleError('');
+  };
   
   const validateMessage = ({ message, setMessageError }) => {
     return message && message.length < 5
@@ -22,4 +30,4 @@ const validateEmail = ({ email, setEmailError }) => {
       : setMessageError('');
   };
   
-  export { validateEmail, validateName, validateMessage};
+  export { validateEmail, validateName, validateMessage, validateTitle};

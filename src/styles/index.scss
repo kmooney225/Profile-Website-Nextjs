@@ -82,7 +82,9 @@
   height: 60px;
 }
 
-
+.slider-wrapper {
+  padding: 0 2rem; /* Adjust 2rem to your desired spacing */
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

@@ -1,89 +1,65 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const LogosDisplay = () => {
-  const containerRef = useRef(null);
-  const logosRef = useRef(null);
-  const logos = ['Hard Rock Cafe', 'Mariott', 'Stanley Market', 'BayFest'];
-  let time = 0;
-  let hoverSpeedModifier = 1;
-
-  const handleMouseOverContainer = () => {
-    hoverSpeedModifier = 0.5; // Slow down the movement
-  };
-
-  const handleMouseOutContainer = () => {
-    hoverSpeedModifier = 1; // Restore the original speed
-  };
-
-  const handleMouseOverLogo = (e) => {
-    e.target.style.fontSize = '5em'; // Enlarge the logo
-    Array.from(logosRef.current.children).forEach((logo) => {
-      if (logo !== e.target) {
-        logo.style.fontSize = '1em'; // Minimize the other logos
-      }
-    });
-  };
-
-  const handleMouseOutLogo = () => {
-    Array.from(logosRef.current.children).forEach((logo) => {
-      logo.style.fontSize = '3em'; // Restore the original scale
-    });
-  };
-
-  useEffect(() => {
-    const logoElements = logosRef.current.children;
-    const containerWidth = containerRef.current.offsetWidth;
-    const containerHeight = containerRef.current.offsetHeight;
-
-    const radius = containerWidth * 0.15; // Adjusted radius for more spacing
-
-    const animateLogos = () => {
-      time += 0.008 * hoverSpeedModifier; // Slower movement
-
-      Array.from(logoElements).forEach((logo, index) => {
-        const t = time + index * 1.5;
-
-        // Figure 8 movement
-        const x = radius * Math.sin(t);
-        const y = radius * Math.sin(t) * Math.cos(t); // Figure 8 pattern
-        const z = 70 * Math.cos(t);
-
-        logo.style.left = `50%`;
-        logo.style.top = `50%`;
-        logo.style.transform = `translate(-50%, -50%) translateZ(${z}px) translateX(${x}px) translateY(${y}px)`;
-      });
-
-      requestAnimationFrame(animateLogos);
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,  
+        autoplaySpeed: 2000,  
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
 
-    animateLogos();
-  }, []);
 
-  return (
-    <div ref={containerRef} style={{ backgroundColor: 'black', overflow: 'hidden', width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <h1 style={{ color: 'white', fontFamily: 'Sacramento', fontSize: '4em', textAlign: 'center', margin: '20px 0' }}>
-        Brands I Have Worked With
-      </h1>
-      <div
-        ref={logosRef}
-        onMouseOver={handleMouseOverContainer}
-        onMouseOut={handleMouseOutContainer}
-        style={{ position: 'relative', overflow: 'hidden', width: '100%', height: 'calc(100vh - 80px)', perspective: '1000px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-      >
-        {logos.map((logo, index) => (
-          <div
-            key={index}
-            onMouseOver={handleMouseOverLogo}
-            onMouseOut={handleMouseOutLogo}
-            style={{ position: 'absolute', color: 'white', fontSize: '3em', textAlign: 'center', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', transition: 'font-size 0.5s ease' }}
-          >
-            {logo}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+    return (
+        <div className='w-full h-full p-4 sm:p-8 flex flex-col items-center justify-center bg-black text-white py-16'>
+            <div className='flex flex-col items-center justify-center rounded-lg p-6 sm:p-10 w-full h-full shadow-2xl'
+                style={{ background: 'linear-gradient(to right, rgba(220, 38, 38, 0.6), rgba(236, 64, 122, 0.6))', }}>
+                <h1 className='text-3xl sm:text-5xl mb-6 sm:mb-10 font-sacramento'
+                    style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                    Brands I Work With
+                </h1>
+                <div className="w-full md:w-3/4 mx-auto">
+                  <Slider {...settings}>
+                      {[
+                          { name: "Hard Rock Cafe", logo: "/path/to/hardrock-logo.png" },
+                          { name: "Ritz Carlton Hotel", logo: "/path/to/ritz-logo.png" },
+                          { name: "Four Seasons Hotel", logo: "/path/to/fourseasons-logo.png" },
+                          { name: "BayFest", logo: "/path/to/bayfest-logo.png" },
+                          { name: "Mariott", logo: "/path/to/mariott-logo.png" },
+                      ].map(brand => (
+                          <div key={brand.name} className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-black border-2 border-white text-white w-full mx-2 md:mx-4'>
+                              <img src={brand.logo} alt={brand.name} className="mx-auto my-4 md:my-8 w-1/3 md:w-1/2 h-auto" />
+                              <h2 className='mt-2 md:mt-5 text-sm md:text-lg sm:text-xl text-center'>
+                                  {brand.name}
+                              </h2>
+                          </div>
+                      ))}
+                  </Slider>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export default LogosDisplay;
-

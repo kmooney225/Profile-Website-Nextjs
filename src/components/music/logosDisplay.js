@@ -42,11 +42,11 @@ const LogosDisplay = () => {
                 <div className="w-full md:w-3/4 mx-auto">
                   <Slider {...settings}>
                       {[
-                          { name: "Hard Rock Cafe", logo: "/path/to/hardrock-logo.png" },
-                          { name: "Ritz Carlton Hotel", logo: "/path/to/ritz-logo.png" },
-                          { name: "Four Seasons Hotel", logo: "/path/to/fourseasons-logo.png" },
-                          { name: "BayFest", logo: "/path/to/bayfest-logo.png" },
-                          { name: "Mariott", logo: "/path/to/mariott-logo.png" },
+                          { name: "Hard Rock Cafe", logo: "./logo-hard-rock.png" },
+                          { name: "Ritz Carlton Hotel", logo: "./Ritz-Carlton-Logo.jpg" },
+                          { name: "Four Seasons Hotel", logo: "./Four-Seasons-Hotels-logo.png" },
+                          { name: "Mariott", logo: "./marriott.png" },
+                          //{ name: "BayFest", logo: "/path/to/bayfest-logo.png" },
                       ].map(brand => (
                           <div key={brand.name} className='h-56 md:h-96 relative items-center justify-center p-3 m-2 rounded-md bg-black border-2 border-white text-white w-full mx-2 md:mx-4'>
                               <img src={brand.logo} alt={brand.name} className="mx-auto my-4 md:my-8 w-1/3 md:w-1/2 h-auto" />

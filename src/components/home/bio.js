@@ -64,7 +64,7 @@ const Bio = () => {
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1.5, type: "spring", stiffness: 120 }}
-                    src={'./ProfilePic.JPG'} 
+                    src={'./ProfilePic2.png'} 
                     alt="Profile Picture" 
                     className='mx-auto w-full md:w-1/2 rounded-full shadow-lg my-4'/>
                 <p 
@@ -72,7 +72,7 @@ const Bio = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 1 }}
                     className='text-md md:text-lg leading-relaxed px-6 py-2'>
-                    Welcome to my webpage, the harmonious intersection of technology and music. I have been lucky enough to spend the past 15 years of my life playing music on a variety of instruments, and I have had the privilege of doing so at many different events and celebrations.
+                    Welcome to my webpage! I have been lucky enough to spend the past 15 years of my life playing music on a variety of instruments, and I have had the privilege of doing so at many different events and celebrations.
                     <br /> <br />
                     I am also involved in the tech industry, using my passion and experience to build innovative and useful services. I believe that music and tech can come together to make something really special - and that is exactly what I am trying to do here.
                     <br /> <br />

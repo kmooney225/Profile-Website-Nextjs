@@ -64,7 +64,7 @@ const Bio = () => {
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1.5, type: "spring", stiffness: 120 }}
-                    src={'./ProfilePic2.png'} 
+                    src={'./ProfilePic.jpg'} 
                     alt="Profile Picture" 
                     className='mx-auto w-full md:w-1/2 rounded-full shadow-lg my-4'/>
                 <p 

@@ -1,14 +1,17 @@
 export default function Testimonials() {
     const testimonials = [
       {
-        text: "Lots of other saxophone players said they were unable to play a Spanish song we requested, but Kevin applied hard work and executed the song perfectly. It was a surprise proposal at a restaurant and we will be hiring again soon for the wedding! We also invited him to stay for dinner and was very respectful and lovely with our family!",
-        author: "By Isabella",
+        text: "Kevin was AMAZING! Very professional. The whole wedding was impressed by how good he was. He definitely made our special night have beautiful energy with his music. We had to ask him to stay longer because everyone liked him so much. THANK YOU Kevin for making our wedding special and unforgettable!",
+        author: "Sofia Moreno",
       },
       {
-        text: "(He) was amazing and everyone raves about him!",
-        author: "By Shannon",
+        text: "Lots of other saxophone players said they were unable to play a Spanish song we requested, but Kevin applied hard work and executed the song perfectly. It was a surprise proposal at a restaurant and we will be hiring again soon for the wedding! We also invited him to stay for dinner and was very respectful and lovely with our family!",
+        author: "Isabella",
       },
-      // You can add more testimonials here...
+      {
+        text: "Kevin did an excellent job playing at my wedding. Our guests enjoyed his music and we will lifelong memories thanks to him. He was easy to communicate with and accommodated my music selections.",
+        author: "Patricia Nantume",
+      },
     ];
   
     return (

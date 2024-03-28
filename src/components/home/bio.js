@@ -72,11 +72,11 @@ const Bio = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 1 }}
                     className='text-md md:text-lg leading-relaxed px-6 py-2'>
-                    Welcome to my webpage! I have been lucky enough to spend the past 15 years of my life playing music on a variety of instruments, and I have had the privilege of doing so at many different events and celebrations.
+                    Welcome! As a passionate saxophone player based in Denver, Colorado, I've spent the past 15 years immersed in the world of music, bringing high-class entertainment to events and celebrations throughout the region. Alongside my musical pursuits, I've also delved into the tech industry as a software engineer, leveraging my expertise to build innovative and impactful services.
                     <br /> <br />
-                    I am also involved in the tech industry, using my passion and experience to build innovative and useful services. I believe that music and tech can come together to make something really special - and that is exactly what I am trying to do here.
+                    I firmly believe that contributing my talents of music and technology can yield remarkable results to your needs, and it's this belief that drives my endeavors here. Whether you're seeking the soulful melodies of a skilled saxophonist for your upscale event or interested in exploring cutting-edge tech solutions, you've come to the right place.
                     <br /> <br />
-                    If you are curious about what I do, or if you have any questions, do not hesitate to reach out! You can drop me a message or schedule a time to chat on the contact page. I cannot wait to hear from you!
+                    Curious about my work or have any questions? Don't hesitate to reach out! Drop me a message or schedule a chat via the contact page. I'm Kevin Mooney, and I'm eager to connect with you and bring a touch of musical sophistication or technological ingenuity to your world.
                 </p>
             </div>
         </div>

@@ -34,11 +34,15 @@ const Hero = () =>{
     }}
     className='absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]'>
     </div>
-    <div className='flex items-center justify-center p-5 text-white z-[2]'>
-        <h1 className='text-6xl md:text-7xl font-sacramento'>
+        <div className='flex-column items-center justify-center p-5 text-white z-[2]'>
+            <h1 className='text-6xl md:text-8xl text-center font-sacramento'>
             Kevin Mooney
             </h1>
-    </div>
+            <h2 className='text-xl md:text-2xl flex mt-20 text-center'>
+                The High-Class, Colorado based, Sax Player and Software Engineer.
+            </h2>
+        </div>
+        
 </div>
 
     )

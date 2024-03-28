@@ -72,9 +72,9 @@ const Bio = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 1 }}
                     className='text-md md:text-lg leading-relaxed px-6 py-2'>
-                    Welcome! As a passionate saxophone player based in Denver, Colorado, I've spent the past 15 years immersed in the world of music, bringing high-class entertainment to events and celebrations throughout the region. Alongside my musical pursuits, I have also delved into the tech industry as a software engineer, leveraging my expertise to build innovative and impactful services.
+                    Welcome! As a passionate saxophone player based in Denver, Colorado, I have spent the past 15 years immersed in the world of music, bringing high-class entertainment to events and celebrations throughout the region. Alongside my musical pursuits, I have also delved into the tech industry as a software engineer, leveraging my expertise to build innovative and impactful services.
                     <br /> <br />
-                    I firmly believe that contributing my talents of music and technology can yield remarkable results to your needs, and it's this belief that drives my endeavors here. Whether you are seeking the soulful melodies of a skilled saxophonist for your upscale event or interested in exploring cutting-edge tech solutions, you have come to the right place.
+                    I firmly believe that contributing my talents of music and technology can yield remarkable results to your needs, and it is this belief that drives my endeavors here. Whether you are seeking the soulful melodies of a skilled saxophonist for your upscale event or interested in exploring cutting-edge tech solutions, you have come to the right place.
                     <br /> <br />
                     Curious about my work or have any questions? Do not hesitate to reach out! Drop me a message or schedule a chat via the contact page. I am Kevin Mooney, and I am eager to connect with you and bring a touch of musical sophistication or technological ingenuity to your world.
                 </p>

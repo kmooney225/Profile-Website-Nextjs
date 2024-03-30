@@ -4,6 +4,7 @@ import Package from "../src/components/webdev/package"
 import Portfolio from "../src/components/webdev/portfolio"
 import BackgroundWeb from '../src/components/layouts/backgroundWeb';
 import { NextSeo } from 'next-seo';
+import CookieBanner from '../src/components/home/CookieBanner';
 
 export default function Webdev() {
 

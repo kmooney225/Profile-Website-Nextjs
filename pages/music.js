@@ -5,6 +5,7 @@ import Testimonials from "../src/components/music/testimonials"
 import Package from "../src/components/music/package"
 import Portfolio from "../src/components/music/portfolio"
 import { NextSeo } from 'next-seo';
+import CookieBanner from '../src/components/home/CookieBanner';
 
 export default function Music() {
 

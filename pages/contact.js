@@ -1,5 +1,6 @@
 import Contacts from '../src/components/contact/index';
 import { NextSeo } from 'next-seo';
+import CookieBanner from '../src/components/home/CookieBanner';
 
 export default function Contact() {
 

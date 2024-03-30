@@ -4,6 +4,7 @@ import Bio from '../src/components/home/bio';
 import Services from '../src/components/home/services';
 import Background from '../src/components/layouts/background';
 import { NextSeo } from 'next-seo';
+import CookieBanner from '../src/components/home/CookieBanner';
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Bio />
       <Services />
       <Background />
+      <CookieBanner/>
     </div>
   )
 }

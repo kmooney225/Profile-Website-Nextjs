@@ -5,7 +5,7 @@ const Footer = () =>{
                 <h2>Kevin Mooney</h2>
             </div>
             <div className="p-8 flex justify-center text-center text-white text-xs text-gray-400">
-                <h4>Copyright &copy; 2023 Kevin Mooney.</h4>
+                <h4>Copyright &copy; 2024 Kevin Mooney.</h4>
             </div>
         </footer>
     )

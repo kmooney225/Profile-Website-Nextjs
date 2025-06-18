@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const BackgroundWeb = () =>{
-    return(
-        <div>
-            <div className='h-auto bg-gradient-to-b from-black via-gray-900 to-black bg-fixed z-[2] object-cover'>
-            </div>
+const BackgroundWeb = () => {
+    return (
+        <div className="fixed top-0 left-0 w-full h-full z-[0]">
+            {/* Gradient Background */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-gray-900 to-black opacity-80"></div>
         </div>
-    )
-}
+    );
+};
 
 export default BackgroundWeb;

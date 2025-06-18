@@ -20,10 +20,10 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative flex flex-col items-center justify-center p-5 text-white z-[2]">
-                <h1 className="text-5xl md:text-6xl text-center font-sacramento">
+                <h1 className="text-6xl md:text-8xl text-center font-sacramento">
                     Kevin Mooney
                 </h1>
-                <h2 className="text-md md:text-2xl flex mt-20 text-center">
+                <h2 className="text-lg md:text-3xl flex mt-20 text-center">
                     The High-Class, Colorado based, Sax Player and Software Engineer.
                 </h2>
             </div>

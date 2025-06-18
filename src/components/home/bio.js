@@ -32,7 +32,7 @@ const Bio = () => {
                 </h2>
 
                 {/* Profile Picture */}
-                <div className="mx-auto w-full md:w-1/2 rounded-full shadow-lg my-4">
+                <div className="mx-auto w-full md:w-1/2 rounded-full my-4">
                     <Image
                         src="/ProfilePic.jpg" // Replace with your image path
                         alt="Profile Picture"

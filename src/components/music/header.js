@@ -11,7 +11,7 @@ const Header = () =>{
             </div>
             <div className='center p-5 text-white z-[2]'>
                 <h2 className='text-3xl'>
-                    Needing a saxophonist for your event?
+                    Need a saxophonist?
                 </h2>
             </div>
         </div>

@@ -5,24 +5,33 @@ const useScrollEffects = (maxBlur = 10, blurRate = 80, opacityRate = 3000) => {
     const [opacity, setOpacity] = useState(1);
 
     useEffect(() => {
+        let timeoutId;
+
         const handleScroll = () => {
             const scrollY = window.scrollY;
 
-            if (scrollY >= 800) {
-                setBlur(`blur(${maxBlur}px)`);
-                setOpacity(0);
-            } else {
-                setBlur(`blur(${scrollY / blurRate}px)`);
-                setOpacity(0.6 + scrollY / opacityRate);
-            }
+            const newBlur = scrollY >= 800 ? `blur(${maxBlur}px)` : `blur(${scrollY / blurRate}px)`;
+            const newOpacity = scrollY >= 800 ? 0 : 0.6 + scrollY / opacityRate;
+
+            // Only update state if values have changed
+            if (newBlur !== blur) setBlur(newBlur);
+            if (newOpacity !== opacity) setOpacity(newOpacity);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        const throttledScroll = () => {
+            if (timeoutId) return;
+            timeoutId = setTimeout(() => {
+                handleScroll();
+                timeoutId = null;
+            }, 100); // Adjust the delay as needed
+        };
+
+        window.addEventListener('scroll', throttledScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', throttledScroll);
         };
-    }, [maxBlur, blurRate, opacityRate]);
+    }, [blur, opacity, maxBlur, blurRate, opacityRate]);
 
     return { blur, opacity };
 };

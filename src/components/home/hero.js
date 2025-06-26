@@ -2,19 +2,25 @@ import React from 'react';
 import useScrollEffects from './hooks/useScrollEffects';
 
 const Hero = () => {
-    const { blur, opacity } = useScrollEffects(); // Use the shared hook
+    const { blur, opacity } = useScrollEffects(); // Use the optimized hook
 
     return (
         <div className="relative flex flex-col items-center justify-center h-screen bg-fixed bg-center bg-cover">
             {/* Black Overlay */}
             <div
-                style={{ opacity: opacity === 1 ? 0.6 : opacity }} // Ensure max opacity is 0.6
+                style={{
+                    opacity: opacity === 1 ? 0.6 : opacity, // Ensure max opacity is 0.6
+                    transition: 'opacity 0.3s ease', // Smooth transitions for opacity
+                }}
                 className="absolute top-0 left-0 right-0 bottom-0 bg-black z-[2]"
             ></div>
 
             {/* Blur Effect */}
             <div
-                style={{ backdropFilter: blur }} // Use the blur value directly
+                style={{
+                    backdropFilter: blur, // Use the blur value directly
+                    transition: 'backdrop-filter 0.3s ease', // Smooth transitions for blur
+                }}
                 className="absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]"
             ></div>
 

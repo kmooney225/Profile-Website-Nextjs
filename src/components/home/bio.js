@@ -2,8 +2,25 @@ import React from 'react';
 import useScrollEffects from './hooks/useScrollEffects';
 import Image from 'next/image'; // Import Next.js Image component
 
+const throttle = (func, limit) => {
+    let inThrottle;
+    return function () {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => (inThrottle = false), limit);
+        }
+    };
+};
+
 const Bio = () => {
     const { blur, opacity } = useScrollEffects(); // Use the shared hook
+
+    const handleScroll = throttle(() => {
+        // Your scroll logic here
+    }, 100);
 
     return (
         <div className="relative flex flex-col items-center justify-center h-full bg-fixed bg-center bg-transparent z-[2]">
@@ -15,7 +32,9 @@ const Bio = () => {
 
             {/* Blur Effect */}
             <div
-                style={{ backdropFilter: blur }}
+                style={{ 
+                    backdropFilter: blur, 
+                }}
                 className="absolute top-0 left-0 right-0 bottom-0 bg-transparent z-[1]"
             ></div>
 
